@@ -1,0 +1,253 @@
+{
+  "video_name": "video-html-deep-dive",
+  "unit": "standalone",
+  "lesson": "how-to-make-a-video",
+  "target_objectives": [
+    "Identify the correct template for any scene type in Mode D.",
+    "Explain how image generation works using the Visual Director prompt formula.",
+    "Describe what to ask Claude to extend the video-html skill with new templates, SVG patterns, or Visual Presets."
+  ],
+  "supporting_objectives": [
+    "Explain the full video generation pipeline from unit setup through assembly."
+  ],
+  "target_vocabulary": [],
+  "supporting_vocabulary": [],
+  "width": 1600,
+  "height": 900,
+  "pipeline": {
+    "grounding": "complete",
+    "script": "complete",
+    "html": "pending",
+    "audio_tags": "pending",
+    "audio": "pending",
+    "assembled": false
+  },
+  "tts": {},
+  "scenes": [
+    {
+      "comment": "Title slide. Title: 'How Video HTML Works'. Subtitle: 'A deep dive into templates, image generation, and extending the skill.' No eyebrow label.",
+      "duration": "",
+      "html": "",
+      "speech": "You have already seen how the pipeline works end to end. This video goes deeper into just one stage - video HTML. You will walk through every template, see how image generation works with live examples of each style, and learn exactly what to ask Claude when you want to add something new.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Gate slide showing the script evaluation step as the FIRST check-in in the skill. Show two outcome paths: left path labeled 'No changes needed - continue', right path labeled 'Proposed: split scene 4 / adjust speech text'. Important note at bottom: 'This gate runs before audio is generated - splits are impossible once MP3s exist.'",
+      "duration": "",
+      "html": "",
+      "speech": "The first thing the video HTML skill does before anything else is evaluate your script. It reads every scene's comment and speech looking for scenes that cover too much ground, or speech that would benefit from minor adjustments before HTML is generated. If changes are proposed, you review and approve them before continuing. This gate runs before audio for a specific reason - once MP3 files exist for each scene, the scene count is locked. Splitting a scene at that point would require re-recording audio. This is your last chance to restructure.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Three sequential gate cards. Card 1: 'Choose Mode' with options C and D shown. Card 2: 'Approve Scene Plan' with a mini table showing Scene / Template / Approach columns and three example rows. Card 3: 'Approve Content Spec' labeled Mode D only, showing exact copy and layout per scene. Small label at bottom: 'No HTML is generated until all gates pass.'",
+      "duration": "",
+      "html": "",
+      "speech": "After script evaluation, the skill walks you through three more check-ins. First, you choose a mode - Mode C generates an AI image for every scene, while Mode D uses the full template toolkit. Then you approve a scene plan showing the template and visual approach for every scene. In Mode D, there is a third check-in where you approve the exact copy and layout for each scene before any HTML is generated.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Split view. Left side: a scene entry from script.json with the comment field highlighted - example comment reads 'Show a horizontal pipeline with three boxes connected by arrows.' Right side: the resulting header-with-svg HTML slide showing exactly that diagram. Arrow connecting left to right labeled 'comment drives this'. Small note: 'Vague comment = generic slide. Specific comment = slides that match the narration.'",
+      "duration": "",
+      "html": "",
+      "speech": "The comment field in each scene is the primary instruction the skill uses to decide what a slide should show. It reads the comment to understand the visual intent, then picks a template and generates content to match. A vague comment produces a generic slide. A specific comment - describing the layout, the relationships between elements, and what to highlight - produces a slide that matches the narration. Writing clear comments is the most direct lever you have over slide quality.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Title slide. Eyebrow: 'Stage 2 of 5'. Title: 'Mode D: The Template Toolkit'. Subtitle: 'Over a dozen templates for every type of visual - text, diagrams, and images.'",
+      "duration": "",
+      "html": "",
+      "speech": "Mode D gives you a toolkit of HTML templates, each designed for a specific type of visual. There are over a dozen in total, organized by whether the visual is driven by text, a custom diagram, or a generated image. Let's walk through all of them.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Annotated example of the title-slide template. Show the three elements clearly labeled: eyebrow (small uppercase letter-spaced text, labeled 'optional - delete if not needed'), large title in Barlow Semi Condensed, a short horizontal divider line, and subtitle in regular weight. Show the purple-to-teal gradient background. Example content: eyebrow 'Unit 3', title 'Introduction to AI', subtitle 'How models learn from data'.",
+      "duration": "",
+      "html": "",
+      "speech": "The title-slide template is the simplest and highest-impact. It is pure typography - a large heading with an optional eyebrow label above and subtitle below. Use it to open or close a video, introduce a new section, or any moment where you want the heading to make the statement by itself. The eyebrow is useful for section numbering. Delete it if the scene does not need it.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show the big-quote template in two variants side by side. Left: with a large decorative opening quotation mark, a quoted phrase in large type, supporting line below - labeled 'Quoted phrase'. Right: without the quote mark, a vocabulary term in large type ('Overfitting'), definition underneath - labeled 'Vocabulary term'. Arrow pointing to the quote mark element with label 'Toggle: delete this element when the content is a term, not a quote.'",
+      "duration": "",
+      "html": "",
+      "speech": "The big-quote template is for single-idea slides. A large term or phrase dominates the slide with one supporting line below. It is the go-to template for vocabulary terms - the term in large type, the definition underneath. If your content is a genuine quoted phrase, keep the decorative quote mark. If it is a concept or term, delete the quote mark so the word stands on its own.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show the code-slide template with a dark background. A short title or context label above the code block. The code block itself in monospace showing 3-4 lines of example code with syntax highlighting using inline spans - one teal keyword, one purple string. Label: 'No external highlighting library - inline span elements only.' Label pointing to background: 'Dark theme only.'",
+      "duration": "",
+      "html": "",
+      "speech": "The code-slide template uses a dark background where the code block is the entire visual. Any surrounding text is minimal framing. Syntax highlighting uses inline span elements with CSS custom properties - no external library needed. The code carries the content. The narration fills in the explanation.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show the header-with-image template layout with clear dimension labels. Narrow heading banner at the top containing short heading text labeled '8 words max'. Below it, a large image placeholder fills the rest of the slide, labeled 'Image fills this area' and '16:9 generated'. Arrow pointing to the slide with label 'Narration carries the explanation - not the slide.'",
+      "duration": "",
+      "html": "",
+      "speech": "Header-with-image is for scenes where an image is the entire visual. The image fills most of the slide and a single heading frames it. Keep the heading to eight words or fewer - the narration does the explaining. Images for this template are generated at sixteen-by-nine aspect ratio. Use it for metaphors, analogies, and scenes where an illustration communicates more than text could.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show two-column-quote-with-image and bullets-with-image side by side as two labeled cards. Left card (two-column-quote-with-image): term 'Neural Network' on the left in large type with a one-line definition, a tall portrait image on the right. Right card (bullets-with-image): three short bullet points on the left, portrait image on the right. Both cards have a label: 'Portrait image - 9:16 generated'.",
+      "duration": "",
+      "html": "",
+      "speech": "Two other templates pair text with a portrait image. Two-column-quote-with-image splits the slide equally between a concept and a portrait image - good for vocabulary terms where a visual alongside the definition adds meaning. Bullets-with-image leads with two or three short takeaways and uses the image for context. Both templates generate their images at nine-by-sixteen portrait orientation.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show the header-with-svg template in two variants. Left variant: with heading banner showing 'Pipeline Overview', SVG area below containing a simple two-box diagram. Right variant: no-title body class, SVG fills the full canvas with the same diagram expanded. Between them, an arrow labeled 'Add class=no-title to <body> for full canvas'. Bottom note in a warning-style box: 'CSS custom properties do not apply inside SVG. Use hex values: #0093A4 teal, #8C52BA purple.'",
+      "duration": "",
+      "html": "",
+      "speech": "Header-with-svg is the most flexible template. It is a container for any custom SVG diagram, with an optional heading at top. Add the class no-title to the body element to give the SVG the full canvas. One important rule that causes bugs if missed: CSS custom properties like var of color-teal do not apply inside SVG elements. Use the brand hex values directly as attribute values.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show the bullets-with-svg template. Left column: three short bullet points in large bold text. Right column: a compact SVG comparison table or small flow diagram. Label the right column width as narrower than full-canvas. Note below: 'Max 3 bullets, 4-5 words each. SVG column is half-width - keep diagrams compact.'",
+      "duration": "",
+      "html": "",
+      "speech": "Bullets-with-svg works like bullets-with-image but places a custom SVG diagram in the right column instead of a photo. Use it when precision matters - when you need to show a relationship, data, or structure alongside the key takeaways. The SVG column is narrower than a full-canvas diagram so keep the design compact. Maximum three bullets, four to five words each.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show three small slide previews in a row with labels and usage notes. First (svg-flow): boxes connected by left-to-right arrows with color labels 'teal=input, purple=processing'. Second (svg-bar-chart): horizontal bars with a prompt card at top, 'top 2 bars teal, rest gray', labeled 'Ranked data or probabilities'. Third (svg-word-display): fill-in-the-blank sentence with probability pills, 'large purple=high, small gray=low', labeled 'Word prediction or token probabilities'. Bottom note: 'ALL-CAPS placeholders - fill in content, do not redesign the layout.'",
+      "duration": "",
+      "html": "",
+      "speech": "Three templates are standalone full-canvas diagrams. The SVG flow template shows a sequence of connected stages - use it for pipelines and processes with three to four steps. The SVG bar chart shows ranked data or probabilities as horizontal bars. The SVG word display shows a sentence completion with probability pills for each likely next word. These templates are self-contained - the layout is predetermined and you fill in the content through ALL-CAPS placeholders.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show four named pattern cards in a two-by-two grid, each showing a small schematic preview and label. Card 1 (two-column-comparison): vertical divider, badge + content box + arrow + response box in each column. Card 2 (two-row-diagram): two horizontal rows each with a left box, arrow, and right box. Card 3 (horizontal-flow-3): three equal boxes with numbered circles connected by arrows. Card 4 (annotated-chat-exchange): two conversation rounds with annotation badges. Header: 'svg-patterns.md'. Label: 'Coordinate formulas and layout conventions - referenced by name in the content spec.'",
+      "duration": "",
+      "html": "",
+      "speech": "For custom SVG inside header-with-svg, the skill has a set of named patterns encoded in a reference file. Each pattern provides layout conventions and coordinate formulas - column widths, box positions, arrow lengths, text baselines - so the model generates consistent geometry rather than recalculating positions from scratch. You reference a pattern by name in the content spec during scene planning and the model applies it. You do not edit the file manually - it guides the generation process.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show two header-with-svg slides side by side with matching visual vocabulary. Both use the same teal box fill, same 2px dark arrow style, same font sizes. Above both slides: label 'Sequence: Pipeline diagrams'. Below: show an HTML comment block embedded in the body: '<!-- Sequence: Pipeline diagrams | boxes=teal | arrows=2px #292F36 -->'. Small note: 'Vocabulary defined once in the scene plan. Applied to every scene in the group.'",
+      "duration": "",
+      "html": "",
+      "speech": "When multiple scenes share the same visual language - the same box colors, arrow styles, font sizes, and shapes - you declare them a connected sequence. Before generating any HTML, you define the visual vocabulary for that sequence once in the scene plan. The model applies it consistently across every scene in the group and embeds a comment at the top of each file recording the vocabulary. This is what makes a multi-slide diagram look like one coherent visual rather than a collection of disconnected slides.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Title slide. Eyebrow: 'Mode C and Mode D'. Title: 'AI Image Generation'. Subtitle: 'Three visual styles. One formula. Consistent results.'",
+      "duration": "",
+      "html": "",
+      "speech": "Mode C uses AI image generation for every scene. Mode D can also use image generation for specific scenes where a photo or illustration works better than a template. Either way, the process is the same - a Visual Director formula that assembles a precise prompt from five components.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show the prompt formula as a structured flow diagram. Five labeled components stack vertically and merge into a final prompt string on the right. Components: (1) Technical Spec - shows three options: Graphic_Staging 16:9, Isometric_Structure 16:9, Vertical_Hierarchy 9:16. (2) Visual Preset - Minimal_Vector / Textured_Editorial / Digital_Glass. (3) Environment - one sentence describing the setting. (4) Subject - who or what and what they are doing. (5) Four always-on Defaults - Clean_Design, Simple_Environment, Slide_Safe_Zone, Complementary_Palette. All five feed into a 'Final Prompt' box on the right.",
+      "duration": "",
+      "html": "",
+      "speech": "Every generated image uses the same formula. A Technical Spec sets the aspect ratio and composition framing - sixteen-by-nine for full-slide images or nine-by-sixteen for portrait images alongside text. A Visual Preset sets the overall style for the video. You add a one-sentence environment and a one-sentence subject description. Then four Defaults are appended to every prompt without exception - they enforce a clean wordless design, a minimalist background, a safe zone keeping content away from the edges, and a color palette that harmonizes with the brand.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Image gen scene. Template: header-with-image. Heading: 'Minimal Vector'. Generate an image using the Minimal_Vector preset. Subject: a person sitting at a clean modern desk, reviewing colorful slide content on a large monitor. Environment: a softly lit minimal workspace with warm wooden desk surface and a neutral background. Style: Minimal_Vector - clean vector illustration, strong precise linework, hard-edged geometric shading, harmonious limited color palette of teal and warm neutrals, matte finish. Technical Spec: Graphic_Staging (16:9). Include all four Defaults.",
+      "duration": "",
+      "html": "",
+      "speech": "The Minimal Vector preset produces clean vector illustrations with strong precise linework, hard-edged geometric shading, and a limited color palette. It has a clarity and structure well suited to technical concepts, process diagrams, and educational content where information needs to come through cleanly.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Image gen scene. Template: header-with-image. Heading: 'Textured Editorial'. Generate an image using the Textured_Editorial preset. Same subject as the previous image - a person at a modern desk reviewing slide content on a large monitor. Same environment - minimal workspace with wooden desk surface. Style: Textured_Editorial - detailed graphic novel realism, textured linework, screen-print aesthetic, warm color palette, opaque flat color blocks, visible grain, hand-crafted feel. Technical Spec: Graphic_Staging (16:9). Connected image sequence - use the Minimal_Vector scene image as reference to match the subject and setting. Include all four Defaults.",
+      "duration": "",
+      "html": "",
+      "speech": "The Textured Editorial preset produces detailed graphic novel realism with textured linework and a screen-print aesthetic. The hand-crafted quality makes it feel warmer and more personal - better for scenes about human experience, creative work, or moments that benefit from character and atmosphere.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Image gen scene. Template: header-with-image. Heading: 'Digital Glass'. Generate an image using the Digital_Glass preset. Same subject as the previous images - a person at a modern desk reviewing slide content on a large monitor. Same environment - minimal workspace. Style: Digital_Glass - clean modern vector forms, translucent frosted-glass layers, soft vibrant gradients, sharp vector-edge highlights, contemporary UI illustration style, sleek and precise. Technical Spec: Graphic_Staging (16:9). Connected image sequence - use the Textured_Editorial scene image as reference. Include all four Defaults.",
+      "duration": "",
+      "html": "",
+      "speech": "The Digital Glass preset produces modern forms with translucent frosted glass layers and soft vibrant gradients. It feels contemporary and technological - the right choice for scenes about software, systems, or anything that should feel forward-facing and precise.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show two header-with-image slides from a connected sequence with matching character and environment. Label the Sequence_Anchor modifier text in a small box. Show a terminal command snippet: 'python gemini-image-gen.py \"...\" --reference-image /path/to/scene_01_img.png'. Label: 'Pass prior scene image as reference - model matches character, setting, and color treatment.' Small note: 'Visual Preset is set once per video - not per scene.'",
+      "duration": "",
+      "html": "",
+      "speech": "When multiple scenes share the same visual thread - the same character, setting, or environment - you declare them a connected image sequence. After the first image is generated, you pass it as a reference image flag when generating subsequent scenes. The model uses that reference to match character design, environment, and color treatment. The Visual Preset is set once for the entire video and does not change per scene.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Title slide. Eyebrow: 'Customization'. Title: 'Extending the Skill'. Subtitle: 'Add templates, patterns, and presets by describing the change to Claude.'",
+      "duration": "",
+      "html": "",
+      "speech": "Everything about how the skill generates slides is defined in a small set of reference files. Changing how the skill works means updating those files. You do not need to edit them manually - you describe what you want to Claude and ask it to update the right file.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Six file cards in a two-by-three grid. Each card shows the filename in teal monospace and a one-line description below it. Card 1: template-selection.md - 'When to use each template, the full template catalog'. Card 2: design-guide.md - 'Color palette, typography scale, layout rules'. Card 3: generation-guide.md - 'Text density, connected sequences, HTML requirements'. Card 4: svg-patterns.md - 'Named SVG patterns and coordinate formulas'. Card 5: image-generation.md - 'Prompt assembly formula and when to use images'. Card 6: prompt-framework.json - 'The three Visual Presets and their style definitions'. All cards are in the path .claude/skills/video-html/references/ except prompt-framework.json which is in assets/.",
+      "duration": "",
+      "html": "",
+      "speech": "The skill's behavior is shaped by six reference files. Template selection describes the catalog and when to use each template. The design guide defines colors, typography, and layout rules. The generation guide covers text density, connected sequences, and HTML requirements. SVG patterns encodes layout formulas for common diagram types. The image generation file defines the prompt assembly process. And prompt-framework.json stores the three Visual Presets and their style descriptions.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show a chat-style request block formatted like a Claude conversation message. The request reads: 'Add a new template called timeline-slide to the video-html skill. It should show a horizontal timeline with 3-5 labeled events. Create the HTML file in .claude/skills/video-html/assets/ using the ALL-CAPS placeholder convention and the standard boilerplate CSS block. Add it to template-selection.md with usage guidance and example use cases. Update generation-guide.md if any new text density rules apply.' Below it, a label: 'Claude creates: assets/timeline-slide.html + updates template-selection.md + updates generation-guide.md'.",
+      "duration": "",
+      "html": "",
+      "speech": "To add a new template, describe its layout and intended use case to Claude, and ask it to create the HTML file in the assets folder, add the template to template-selection.md, and update the generation guide if new layout rules apply. The ALL-CAPS placeholder convention is what makes templates reusable - every variable element like the title or a bullet point uses a placeholder that the model replaces during generation. Ask Claude to follow that convention and the new template works immediately.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Show two chat-style request blocks stacked vertically. Top block (SVG pattern): 'Add a new SVG pattern called annotated-code-block to svg-patterns.md. It shows a code block on the left with callout annotations pointing to specific lines on the right. Include layout procedures and text baseline formulas following the same format as existing patterns.' Label below: 'Claude updates: svg-patterns.md'. Bottom block (Visual Preset): 'Add a new Visual Preset called Blueprint_Technical to prompt-framework.json and image-generation.md. Style: precise engineering blueprint aesthetic, white technical linework on dark navy background, teal color accents.' Label below: 'Claude updates: prompt-framework.json + image-generation.md'.",
+      "duration": "",
+      "html": "",
+      "speech": "For a new SVG pattern, describe the layout geometry and a reference use case, and ask Claude to add an entry to svg-patterns.md with coordinate procedures and sizing defaults following the same format as existing patterns. For a new Visual Preset, describe the visual style in concrete terms - the rendering technique, color treatment, and finish - and ask Claude to add it to both prompt-framework.json and image-generation.md. The skill will immediately know how to apply both to new videos.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    }
+  ]
+}

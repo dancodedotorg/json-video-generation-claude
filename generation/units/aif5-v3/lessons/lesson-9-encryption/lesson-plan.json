@@ -1,0 +1,40 @@
+{
+  "unit": "aif5-v3",
+  "lesson": "lesson-9-encryption",
+  "videos": [
+    {
+      "name": "what-encryption-does",
+      "target_objectives": [
+        "Describe how encryption helps protect data"
+      ],
+      "supporting_objectives": [],
+      "target_vocabulary": [
+        "Encryption",
+        "Decryption"
+      ],
+      "supporting_vocabulary": [],
+      "mode": "re-teach",
+      "brief": null
+    },
+    {
+      "name": "encryption-types-and-data-states",
+      "target_objectives": [
+        "Differentiate between symmetric and asymmetric encryption",
+        "Apply encryption concepts to different data states (at rest, in transit, in use)"
+      ],
+      "supporting_objectives": [
+        "Describe how encryption helps protect data"
+      ],
+      "target_vocabulary": [
+        "symmetric encryption",
+        "asymmetric encryption"
+      ],
+      "supporting_vocabulary": [
+        "Encryption",
+        "Decryption"
+      ],
+      "mode": "re-teach",
+      "brief": null
+    }
+  ]
+}

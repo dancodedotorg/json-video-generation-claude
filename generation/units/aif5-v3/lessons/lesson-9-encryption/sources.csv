@@ -1,0 +1,13 @@
+description,type,value
+Caesar Cipher Wheel,google_slides,https://docs.google.com/presentation/d/1yUziVL7c_gzWAO2W7zU8NPbUPiUahkOsfPC9uI_r2Og/edit?usp=drive_link
+Design Challenge Inspiration Cards,google_slides,https://docs.google.com/presentation/d/1PcX7_KjwYIW_fklIX5qA35Lt84LVdWWcxMjYbUTv-tg/edit?usp=drive_link
+Encryption Design Challenge,google_doc,https://docs.google.com/document/d/1fw7Vi2fHVYdqEN299-9Hr9-c5FnLVC8ZQPeWryURJlo/edit?usp=drive_link
+Lesson Levels,level_summary,10454399
+Teacher Slides,google_slides,https://docs.google.com/presentation/d/1CEv_cW2NLenjB8Rj81AxWtQOqCXchSvhAPiML8BFu3Q/edit?usp=sharing
+Decryption,vocabulary,"Decryption: a process that reverses encryption, taking a secret message and reproducing the original plain text"
+Encryption,vocabulary,"Encryption: a process of encoding messages to keep them secret, so only ""authorized"" parties can read it"
+asymmetric encryption,vocabulary,asymmetric encryption: encryption that uses two different keys: a public key to lock the message and a private key to unlock it
+symmetric encryption,vocabulary,symmetric encryption: encryption where the same key is used to lock and unlock the message
+Objective: Apply encryption concepts to different data states (at re...,objective,"Apply encryption concepts to different data states (at rest, in transit, in use)"
+Objective: Describe how encryption helps protect data,objective,Describe how encryption helps protect data
+Objective: Differentiate between symmetric and asymmetric encryption,objective,Differentiate between symmetric and asymmetric encryption

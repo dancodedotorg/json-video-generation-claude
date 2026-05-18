@@ -1,0 +1,122 @@
+{
+  "video_name": "what-encryption-does",
+  "unit": "aif5-v3",
+  "lesson": "lesson-9-encryption",
+  "target_objectives": [
+    "Describe how encryption helps protect data"
+  ],
+  "supporting_objectives": [],
+  "target_vocabulary": [
+    "Encryption",
+    "Decryption"
+  ],
+  "supporting_vocabulary": [],
+  "mode": "re-teach",
+  "brief": null,
+  "width": 1600,
+  "height": 900,
+  "pipeline": {
+    "grounding": "complete",
+    "script": "complete",
+    "html": "complete",
+    "audio_tags": "complete",
+    "audio": "complete",
+    "assembled": false,
+    "html_mode": "html_templates_only"
+  },
+  "tts": {
+    "provider": "gemini",
+    "mode": "per_scene",
+    "voice": "Zephyr"
+  },
+  "scenes": [
+    {
+      "comment": "Title slide: 'Let's Revisit: What Encryption Does' as a reinforcement opener",
+      "speech": "Let's revisit encryption from Lesson 9. In this short video, we'll go back to what encryption actually is, what decryption means, and why the combination of the two is what protects your data.",
+      "elevenlabs": "[happy] Let's revisit encryption from Lesson 9. In this short video, we'll go back to what encryption actually is, what decryption means, and why the combination of the two is what protects your data.",
+      "gemini": "[warmly] Let's revisit encryption from Lesson 9. In this short video, we'll go back to what encryption actually is, what decryption means, and why the combination of the two is what protects your data.",
+      "duration": "14.26s",
+      "audio": "audio/scene_01.mp3"
+    },
+    {
+      "comment": "Side-by-side reveal: scrambled message 'Wklv phvvdjh lv vhfuhw' on the left, decoded 'This message is secret.' on the right, with an arrow and key label between them",
+      "speech": "In the warm-up, you tried to decode this message: 'Wklv phvvdjh lv vhfuhw.' At first, it looked like nonsense. But once you knew the method - shift each letter backward through the alphabet - and the key - shift by three - the message became readable: 'This message is secret.'",
+      "elevenlabs": "[curious] In the warm-up, you tried to decode this message: 'Wklv phvvdjh lv vhfuhw.' At first, it looked like nonsense. But once you knew the method - shift each letter backward through the alphabet - and the key - shift by three - the message became readable: 'This message is secret.'",
+      "gemini": "[curious] In the warm-up, you tried to decode this message: 'Wklv phvvdjh lv vhfuhw.' At first, it looked like nonsense. But once you knew the method - shift each letter backward through the alphabet - and the key - shift by three - the message became readable: [excitedly] 'This message is secret.'",
+      "duration": "27.94s",
+      "audio": "audio/scene_02.mp3"
+    },
+    {
+      "comment": "Two clearly labeled boxes: 'Method' (the repeatable rule) and 'Key' (the secret information), with a plus connector showing both are required",
+      "speech": "That activity points to something important. Every encryption needs two things working together. The method is the repeatable rule. The key is the secret piece of information. Without both, the message stays scrambled. With both, anyone can recover the original. That pairing of rule plus secret is the heart of how encryption works.",
+      "elevenlabs": "[thoughtful] That activity points to something important. Every encryption needs two things working together. The method is the repeatable rule. The key is the secret piece of information. Without both, the message stays scrambled. With both, anyone can recover the original. That pairing of rule plus secret is the heart of how encryption works.",
+      "gemini": "[deliberately] That activity points to something important. Every encryption needs two things working together. The method is the repeatable rule. The key is the secret piece of information. Without both, the message stays scrambled. With both, anyone can recover the original. That pairing of rule plus secret is the heart of how encryption works.",
+      "duration": "26.42s",
+      "audio": "audio/scene_03.mp3"
+    },
+    {
+      "comment": "Definition card: Encryption - large term with its formal definition below",
+      "speech": "So here is the formal definition. Encryption is a way to make data unreadable to anyone without the right key.",
+      "elevenlabs": "So here is the formal definition. Encryption is a way to make data unreadable to anyone without the right key.",
+      "gemini": "[seriously] So here is the formal definition. Encryption is a way to make data unreadable to anyone without the right key.",
+      "duration": "9.86s",
+      "audio": "audio/scene_04.mp3"
+    },
+    {
+      "comment": "Three-box flow diagram: plain text on the left flowing through a key/encryption step and becoming unreadable encrypted data on the right",
+      "speech": "When you send a text, log in to an account, or store a password, encryption is what scrambles that data so it can't be read by anyone in between. The point isn't just to hide the information - it's to make it unreadable in a way that the right person can still reverse.",
+      "elevenlabs": "When you send a text, log in to an account, or store a password, encryption is what scrambles that data so it can't be read by anyone in between. The point isn't just to hide the information - it's to make it unreadable in a way that the right person can still reverse.",
+      "gemini": "[thoughtfully] When you send a text, log in to an account, or store a password, encryption is what scrambles that data so it can't be read by anyone in between. The point isn't just to hide the information - it's to make it unreadable in a way that the right person can still reverse.",
+      "duration": "19.30s",
+      "audio": "audio/scene_05.mp3"
+    },
+    {
+      "comment": "Definition card: Decryption - large term with its formal definition below",
+      "speech": "Decryption is the reverse process. It uses a key to turn encrypted data back into its original form.",
+      "elevenlabs": "[thoughtful] Decryption is the reverse process. It uses a key to turn encrypted data back into its original form.",
+      "gemini": "[clearly] Decryption is the reverse process. It uses a key to turn encrypted data back into its original form.",
+      "duration": "8.70s",
+      "audio": "audio/scene_06.mp3"
+    },
+    {
+      "comment": "Reverse three-box flow diagram: encrypted data on the left being unlocked by a key and restored to readable plain text on the right",
+      "speech": "You usually don't see decryption happening, but every time you unlock your phone, open a secure message, or load a website with a lock icon, decryption is running quietly in the background. That reversibility is what makes encryption useful instead of just scrambling for the sake of scrambling.",
+      "elevenlabs": "[excited] You usually don't see decryption happening, but every time you unlock your phone, open a secure message, or load a website with a lock icon, decryption is running quietly in the background. That reversibility is what makes encryption useful instead of just scrambling for the sake of scrambling.",
+      "gemini": "[amazed] You usually don't see decryption happening, but every time you unlock your phone, open a secure message, or load a website with a lock icon, decryption is running quietly in the background. That reversibility is what makes encryption useful instead of just scrambling for the sake of scrambling.",
+      "duration": "23.06s",
+      "audio": "audio/scene_07.mp3"
+    },
+    {
+      "comment": "Three statement cards stacked vertically: card 1 shows a green check, cards 2 and 3 show edit marks with the corrected wording underneath",
+      "speech": "In the Stand Up Sit Down activity, you sorted three statements. Statement one was accurate: encryption must be reversible - if the right person can't decode it, it isn't really encryption. Statement two needed a fix: the key is not the same thing as the message. The key is a separate piece of information that tells you how to decode. Statement three also needed a fix: if a method scrambles a message but no one can decode it, that's just hiding letters, not encryption.",
+      "elevenlabs": "[thoughtful] In the Stand Up Sit Down activity, you sorted three statements. Statement one was accurate: encryption must be reversible - if the right person can't decode it, it isn't really encryption. Statement two needed a fix: the key is not the same thing as the message. The key is a separate piece of information that tells you how to decode. Statement three also needed a fix: if a method scrambles a message but no one can decode it, that's just hiding letters, not encryption.",
+      "gemini": "[deliberately] In the Stand Up Sit Down activity, you sorted three statements. Statement one was accurate: encryption must be reversible - if the right person can't decode it, it isn't really encryption. Statement two needed a fix: the key is not the same thing as the message. The key is a separate piece of information that tells you how to decode. Statement three also needed a fix: if a method scrambles a message but no one can decode it, that's just hiding letters, not encryption.",
+      "duration": "35.02s",
+      "audio": "audio/scene_08.mp3"
+    },
+    {
+      "comment": "Activity-guide-style view of a design form with labeled sections for 'Method' and 'Key', showing what each requires",
+      "speech": "Then in the Encryption Design Challenge, you and a partner invented your own encryption method. The rules were simple. Your method had to scramble a message, and it had to include a way to decode it. That second part - having a clear decoding rule - is what made your design count as real encryption, not just a fun way to hide letters.",
+      "elevenlabs": "[excited] Then in the Encryption Design Challenge, you and a partner invented your own encryption method. The rules were simple. Your method had to scramble a message, and it had to include a way to decode it. That second part - having a clear decoding rule - is what made your design count as real encryption, not just a fun way to hide letters.",
+      "gemini": "[warmly] Then in the Encryption Design Challenge, you and a partner invented your own encryption method. The rules were simple. Your method had to scramble a message, and it had to include a way to decode it. [seriously] That second part - having a clear decoding rule - is what made your design count as real encryption, not just a fun way to hide letters.",
+      "duration": "24.14s",
+      "audio": "audio/scene_09.mp3"
+    },
+    {
+      "comment": "Balance scale with 'security' on one side and 'usability' on the other, leveled so neither side dominates",
+      "speech": "After the challenge, the class discussed what made a method seem strong, and whether stronger is always better. The takeaway: a method so hard that even the right person can't decode it isn't useful. Real encryption has to balance security with usability. Engineers who design real encryption systems face this exact same tradeoff every day.",
+      "elevenlabs": "[thoughtful] After the challenge, the class discussed what made a method seem strong, and whether stronger is always better. The takeaway: a method so hard that even the right person can't decode it isn't useful. Real encryption has to balance security with usability. Engineers who design real encryption systems face this exact same tradeoff every day.",
+      "gemini": "[thoughtfully] After the challenge, the class discussed what made a method seem strong, and whether stronger is always better. The takeaway: [seriously] a method so hard that even the right person can't decode it isn't useful. Real encryption has to balance security with usability. Engineers who design real encryption systems face this exact same tradeoff every day.",
+      "duration": "27.18s",
+      "audio": "audio/scene_10.mp3"
+    },
+    {
+      "comment": "Question of the Day title card: 'What makes encryption a powerful way to protect data?' centered prominently",
+      "speech": "So let's come back to the Question of the Day. What makes encryption a powerful way to protect data? It's the combination. A repeatable method plus a secret key. Together, they make data unreadable to anyone on the outside, while still being recoverable by the person who holds the key. That's the core of what encryption does.",
+      "elevenlabs": "[happy] So let's come back to the Question of the Day. What makes encryption a powerful way to protect data? It's the combination. A repeatable method plus a secret key. Together, they make data unreadable to anyone on the outside, while still being recoverable by the person who holds the key. That's the core of what encryption does.",
+      "gemini": "[warmly] So let's come back to the Question of the Day. What makes encryption a powerful way to protect data? It's the combination. A repeatable method plus a secret key. Together, they make data unreadable to anyone on the outside, while still being recoverable by the person who holds the key. That's the core of what encryption does.",
+      "duration": "26.94s",
+      "audio": "audio/scene_11.mp3"
+    }
+  ]
+}

@@ -1,0 +1,182 @@
+[
+  {
+    "index": 0,
+    "slide_id": "gca418c6afa_0_1070",
+    "notes": "",
+    "png_base64": null
+  },
+  {
+    "index": 1,
+    "slide_id": "gca418c6afa_0_109",
+    "notes": "Warm Up (10 mins)",
+    "png_base64": null
+  },
+  {
+    "index": 2,
+    "slide_id": "g2694c47731d_0_16",
+    "notes": "🎯 Goal of this activity: Introduce encryption through a short, scaffolded Caesar cipher activity that includes productive struggle and active use of a key. Set students up to think critically about how encryption systems are designed.\n\n☑️ Do This: Display the encrypted message. \n\n🎙️ Say: This is a secret message. You don’t know the method or the key … yet. See if you can figure out how to decode it.\n\n☑️ Do This: Wait 1–2 minutes for students to try decoding the message on their own. Don’t give them any clues at first — encourage productive struggle. After a minute or when a student asks, let them know this is a Caesar cipher — a type of encryption that shifts each letter by a fixed amount.\n\nTeaching Tip\nSome students may immediately ask “What are we supposed to do?” or freeze if they don’t get it. Reassure them that it’s okay to guess or play with the pattern. Try prompting students with: “What do you notice about the letters?” or “Try shifting a few letters and see what happens.”\nConsider encouraging students to jot down the alphabet on scratch paper. This helps them visualize letter shifts and supports pattern-based learners.",
+    "png_base64": null
+  },
+  {
+    "index": 3,
+    "slide_id": "g372bed92f91_0_0",
+    "notes": "🎥 Video: Show the \"Encryption & Public Key\" video from 00:55 - 1:45 to introduce Caesar Cipher.\n\n☑️ Do This: Before playing the clip, read the two questions aloud and tell students to watch for the answers:\nHow does the Caesar Cipher method work?\nWhat is a key?\nAfter the video, ask for a few quick responses before moving to the next slide.\n\n💡 Discussion Goal:  Students should recognize that the Caesar Cipher is a substitution method that shifts letters in the alphabet using a numerical value called a key. The key is what allows someone to both encrypt and decrypt a message, and without it, the message appears meaningless. This sets up the foundational idea that encryption relies on a repeatable rule + a shared secret.",
+    "png_base64": null
+  },
+  {
+    "index": 4,
+    "slide_id": "g36f8ffbb111_0_6",
+    "notes": "☑️ Do This: Explain that a Caesar cipher works by shifting each letter in the alphabet a certain number of places. That number, the amount you shift, is called the key. You can shift forward or backward, but both people need to know the key to decode the message.\n\nTeaching Tip\nIf students are still unclear, try a quick example on the board: \"Let's say we shift every letter forward by 2 — A becomes C, B becomes D, and so on.\" Visual learners benefit from seeing the letter mapping laid out, especially if you circle back to this later during the design challenge.",
+    "png_base64": null
+  },
+  {
+    "index": 5,
+    "slide_id": "g36367a4b268_0_2",
+    "notes": "☑️ Do This:  Display the encrypted message again, this time along with the method (“shift letters backward”) and the key (“shift by 3”).  Give students another 1–2 minutes to try decoding it.  Then click to reveal the decrypted message: “This message is secret.”\n\nTeaching Tip\nWrite the alphabet on the board and show how to use the key to shift a letter — for example, shift “W” back 3 letters to get “T.”\nEncourage students to do the same on a scrap piece of paper. Seeing the full alphabet helps them visualize the shifts and makes both encoding and decoding easier.\nThere is a Caesar Cipher wheel provided as an optional resource if you would like your students to use that manipulative.\n\nOptional Mini-Extension (If Time Allows or for Fast Finishers):  Ask students to create their own short message and encrypt it using a Caesar cipher with a different shift (like +4 or +7). Then, swap messages with a partner and try to decode each other's message using the new key.",
+    "png_base64": null
+  },
+  {
+    "index": 6,
+    "slide_id": "g3710a76bdb5_0_1",
+    "notes": "💬 Discuss: Click through the animated slide to display the prompts.\nWhat made the secret message hard to decrypt at first?\nWhat changed once you knew the method and the key?\n\n💡 Discussion Goal: This discussion aims to help students understand that encryption works because of a repeatable method and a secret key. Without them, the message looks like nonsense — but with them, it becomes readable. This sets up key ideas they’ll explore later, like the importance of keeping keys secret, and balancing strength with usability.\n\n🎙️ Say: The Caesar cipher is one of the oldest known encryption methods, and you just used it. But could you invent something stronger? Faster? Stranger? That's your next challenge!",
+    "png_base64": null
+  },
+  {
+    "index": 7,
+    "slide_id": "g1b0012b9552_0_230",
+    "notes": "☑️ Do This: Introduce the lesson objectives.",
+    "png_base64": null
+  },
+  {
+    "index": 8,
+    "slide_id": "g1b0012b9552_0_235",
+    "notes": "☑️ Do This: Introduce the Question of the Day.",
+    "png_base64": null
+  },
+  {
+    "index": 9,
+    "slide_id": "gca418c6afa_0_49",
+    "notes": "Activity (30 mins)",
+    "png_base64": null
+  },
+  {
+    "index": 10,
+    "slide_id": "g36f8ffbb111_0_38",
+    "notes": "Encryption Design Challenge (20 mins)\n🎯 Goal of this activity:  Help students define foundational encryption terms (encryption and decryption), then apply those concepts by designing their own encryption method. This creative challenge encourages students to balance security and usability and prepares them to compare their system to real-world encryption types later in the lesson.\n\n☑️ Do This: Have students take out their AI Powered Threat and Defenses Unit Guide.",
+    "png_base64": null
+  },
+  {
+    "index": 11,
+    "slide_id": "g372695ed783_0_0",
+    "notes": "☑️ Do This: Define encryption. Provide students an example such as: Encryption is what scrambles your data when you send a text or store a password. Without the right key, someone else can't read it.\n\nTeaching Tip\n Students may associate encryption with passwords or messaging apps but not know exactly what it means. You can reinforce that encryption doesn't just hide data — it makes it unreadable unless you have a way to unlock it. This sets up the need for a key in the next slide.",
+    "png_base64": null
+  },
+  {
+    "index": 12,
+    "slide_id": "g372695ed783_0_11",
+    "notes": "☑️ Do This: Define decryption. Tell students that decryption is what happens when someone uses the correct key to unlock a scrambled message. It's the reverse of encryption — turning unreadable data back into something that makes sense.\n\nTeaching Tip\n Students may think of \"decryption\" as something only hackers do. Let them know that every time they unlock a phone, read a secure message, or use a password manager, decryption is happening in the background — using a key their device already knows.",
+    "png_base64": null
+  },
+  {
+    "index": 13,
+    "slide_id": "g3b0605ba413_0_0",
+    "notes": "🎯 Goal of this activity: Quickly check whether students understand that encryption must be reversible and how a key is used in encryption before starting the Encryption design challenge.\n\n💻 Transition: Use this quick check before students begin the Encryption Design Challenge to confirm they understand the core ideas of encryption.\n\n☑️ Do This: After each stand/sit response, ask: What detail made you choose that? Have partners share one sentence of reasoning before inviting one volunteer to clarify.\n\nTeaching Tip:\nListen for confusion about keys or reversibility. These issues lead directly to unusable or non-decryptable encryption methods during the challenge.\n\nAssessment Opportunity    \nThis check helps determine whether students are ready to design reversible, key-based encryption methods. Look for:\nIf many students stand for Statement 2, briefly reteach the purpose of a key and emphasize that it is separate from the message.\nIf many students stand for Statement 3, emphasize that encryption is not random obfuscation; it must follow a rule that allows decryption.\nIf students demonstrate strong understanding, proceed to the design challenge.",
+    "png_base64": null
+  },
+  {
+    "index": 14,
+    "slide_id": "g3b0605ddc7d_0_0",
+    "notes": "☑️ Do This:  Read Statement #1 aloud, then ask students to respond by standing up if they think it is accurate or sitting down if they think it needs to be fixed.",
+    "png_base64": null
+  },
+  {
+    "index": 15,
+    "slide_id": "g3b0605ddc7d_0_14",
+    "notes": "☑️ Do This:  Read Statement #2 aloud, then ask students to respond by standing up if they think it is accurate or sitting down if they think it needs to be fixed.",
+    "png_base64": null
+  },
+  {
+    "index": 16,
+    "slide_id": "g3b0605ddc7d_0_22",
+    "notes": "☑️ Do This:  Read Statement #3 aloud, then ask students to respond by standing up if they think it is accurate or sitting down if they think it needs to be fixed.",
+    "png_base64": null
+  },
+  {
+    "index": 17,
+    "slide_id": "g2694c47731d_3_322",
+    "notes": "☑️ Do This: Place students into groups of two or three.\n📄 Distribute: Give each pair of students a copy of the Encryption Design Challenge activity guide.",
+    "png_base64": null
+  },
+  {
+    "index": 18,
+    "slide_id": "g2694c47731d_3_317",
+    "notes": "☑️ Do This: Direct students to work with their group to invent their own encryption method that scrambles a message and can be decrypted only by someone with the right key, rule, or pattern.\n\n🔁 Circulate: As groups work, ask open-ended questions to deepen thinking:\nWhat makes your encryption secure?\nCould someone decode it without knowing the key?\nWould a computer or person be better at cracking this?\nWhat tradeoff are you making between security and ease of use?\n\nTeaching Tip\nStruggling students: \nIf students feel stuck, reassure them that their method doesn't need to be super complex — it just needs to scramble a message and include a way to decode it.\nIf they need a creative boost, have them draw an Encryption Inspiration Card to get started. They can adapt or build on the idea to create a method that works for them.\n\nEarly Finishers:\nEncourage students who finish early to try to increase the complexity of their design by adding more layers to their method.\nEarly finishers should also test their method on a short sentence and write both the encrypted and decrypted versions.",
+    "png_base64": null
+  },
+  {
+    "index": 19,
+    "slide_id": "g3635e6b6859_0_63",
+    "notes": "💬 Discuss: What made an encryption method seem strong? Is strong always better?\n\n💡 Discussion Goal: This discussion helps students reflect on what made encryption systems \"strong\" in their design challenge — and whether those strengths came with tradeoffs. Encourage students to consider how usable or understandable their methods were, and whether a message that’s too hard to decode is still useful. This discussion sets the stage for comparing real-world encryption methods later in the lesson.\n\nTeaching Tip\nIf students are curious about how real encryption is used, you can introduce examples like AES and RSA.\nExplain that AES is often used to protect stored data because it's fast and efficient, while RSA is used to securely share keys between systems.\nThese are real-world examples of the symmetric and asymmetric encryption types students will learn more about later in the lesson.\nUse this preview to show how encryption design decisions happen in actual systems — where security, speed, and usability must be balanced.\n\nAssessment Opportunity\nAs students reflect on what makes encryption \"strong\", listen for how well they:\nIdentify the features that made a system feel secure (e.g., complexity, hidden patterns, unpredictability)\nConsider whether the method was too difficult or impractical to use\nRecognize the tradeoff between strength and usability\nCompare how their method worked versus others' in terms of clarity, difficulty, or purpose\n\nOn Track if students say:\n“It was hard to break, but we had trouble remembering how to use it.”\n“It worked, but if someone didn’t know the rule exactly, they couldn’t decode it.”\n“Ours was simple and fast, but maybe not very secure.”\n“I think it’s better for fun messages than for real data.”\n\nThese responses show students are beginning to reason like system designers — balancing security, clarity, and real-world use.\nIf you hear these, move forward confidently. Consider highlighting a few aloud: “That’s the kind of tradeoff real engineers face — how to keep things secure and usable.”\n\nIf Students Struggle:\nIf you hear:\n\"Stronger is always better.\"\n“You just make it random and confusing.”\n“The more complicated it is, the safer it is — no matter what.”\nTry this:\nPrompt with a follow-up: “Would this work if you needed to send a quick message to a friend?”\nAsk: “If even you can’t explain how to decode it, is it practical?”\nReframe: “Imagine you're the person receiving this message — what would you need to know to read it?”",
+    "png_base64": null
+  },
+  {
+    "index": 20,
+    "slide_id": "g372bed92f91_0_25",
+    "notes": "Encryption Types and Data States (10 mins)\n🎯 Goal of this activity: Help students understand symmetric encryption and connect it to their earlier design work. This sets the foundation for analyzing how encryption methods are used in different data states.\n\n☑️ Do This: Define symmetric encryption. Ensure students understand that in symmetric encryption, both people need to have the same secret key. That key is used to scramble the message and also to unlock it. It’s fast and efficient — but it only works if the key stays secret and both people have it.\n\nTeaching Tip\nThis section introduces several key concepts and requires students to reflect on how their encryption method connects to real-world systems. Students will define new terms, watch a short video, apply what they learn to a data states table, and answer two reflection questions. Be mindful of pacing — consider setting time limits for each step or prioritizing what to revisit in a class discussion later if needed.",
+    "png_base64": null
+  },
+  {
+    "index": 21,
+    "slide_id": "g372bed92f91_0_47",
+    "notes": "☑️ Do This: Define asymmetric encryption. Ensure students understand that asymmetric encryption uses two keys. Anyone can use your public key to lock a message — but only you can unlock it using your private key. That’s how secure messages can be exchanged between people who haven’t met before.\n\nTeaching Tip\nStudents may be confused by the idea of two different keys. Let them know they'll watch a short video next that uses a real-world analogy to make this concept easier to understand. Encourage them to look for: Which key is shared, which one stays private, and why would this be useful.",
+    "png_base64": null
+  },
+  {
+    "index": 22,
+    "slide_id": "g372bed92f91_0_58",
+    "notes": "🎥 Video: Show the \"Encryption & Public Key\" video from 4:10 - 5:40 to explain symmetric and asymmetric encryption.\n\n☑️ Do This: Before playing the clip, read the question aloud and tell students to watch for the answers:\nWhat is the difference between symmetric and asymmetric encryption?\nBased on what you see, which type best matches the encryption method you designed?\nAfter the video, ask students to turn and talk or briefly share out which method they think they created — and why.\n\n💡 Discussion Goal:  Students should be able to explain the basic difference between symmetric (same key for locking and unlocking) and asymmetric (two different keys: one public, one private). More importantly, they should begin to analyze their own encryption design and identify whether it aligns more closely with one method or the other — and why. This prepares them to reflect more deeply in the Code Studio questions that follow.\n\nTeaching Tip\nThe video explains the concept of asymmetric encryption using a mailbox metaphor. If students seem confused after watching, try revisiting the key distinction:\nSymmetric = same key to lock and unlock\nAsymmetric = two different keys: one to lock (public), one to unlock (private)\nAsk: “Why might asymmetric encryption be more useful when the two people don’t know each other yet?”",
+    "png_base64": null
+  },
+  {
+    "index": 23,
+    "slide_id": "g3635e6b6859_0_1",
+    "notes": "🎙️ Say: We just talked about how encryption keeps data safe, but data doesn't just sit in one place. It moves and changes, like a message on your phone that's stored, sent, and read. We protect data at different times.\n\n☑️ Do This:  Click through the animated slide to introduce the three data states — At Rest, In Transit, and In Use. Use the example of a message on your phone to show how encryption protects it during each stage: saving, sending, and using.\nWhen it's saved on your device, symmetric encryption is used because it’s fast and efficient.\nWhen it's sent across a network, asymmetric encryption is used to establish a secure connection — even over public internet. Then symmetric encryption protects the message itself.\nWhen it's opened and being read or edited, it's typically decrypted so apps can access it. Then symmetric encryption protects the message itself.\n\nTeaching Tip\n If students struggle with the idea of data moving between states, draw a quick timeline on the board:\nSaved → Sent → Opened, and label each with the encryption type used.\nThis can help visual learners see how one message moves through each protection step.",
+    "png_base64": null
+  },
+  {
+    "index": 24,
+    "slide_id": "g372bed92f91_0_75",
+    "notes": "💻 Transition: Direct students to Lesson 9, Level 1 in Code Studio to answer three reflection questions about the encryption method they created.\n\nTeaching Tip\n If time permits, consider displaying anonymous student responses and facilitating a brief class discussion:\n    \"Why did some people say their method was symmetric?\"\n    \"Did anyone change their mind about which data state theirs works best for?\"\n    \"What would make one type easier or harder to use in real life?\"\nThis reinforces key concepts and highlights diverse student thinking in a low-stakes way.\n\nAssessment Opportunity\n Student responses in Level 1 can be used as a formative assessment of the lesson's key objectives:\nDescribe how encryption helps protect data.\nDifferentiate between symmetric and asymmetric encryption.\nApply encryption concepts to different data states\nAs students submit their responses, circulate to spot-check for:\nClear descriptions of how the keys work (e.g., “same key” vs. “public/private pair”)\nCorrect identification of symmetric or asymmetric based on key structure\nReasoned justification for data at rest vs. in transit, using concepts like speed, usability, or connection setup\n If students are struggling, try the following:\nReteach key concepts using a quick visual recap: “If both people already have the same key = symmetric. If one person can send a locked message without knowing the recipient = asymmetric.”\nUse a simple worked example on the board (e.g., shifting letters with one rule vs. needing two pieces of info to unlock)\nHave students discuss their answers in pairs and revise for clarity\nRevisit the data states table or the encryption diagram and ask: “Would your method work if the other person didn’t already know the key?” or  “Could this be used in real-time, like for a text message?”",
+    "png_base64": null
+  },
+  {
+    "index": 25,
+    "slide_id": "gca418c6afa_0_13",
+    "notes": "Wrap Up (5 mins)",
+    "png_base64": null
+  },
+  {
+    "index": 26,
+    "slide_id": "g111726a1132_0_199",
+    "notes": "☑️ Do This: Review the lesson objectives.",
+    "png_base64": null
+  },
+  {
+    "index": 27,
+    "slide_id": "g1b0012b9552_0_737",
+    "notes": "☑️ Do This: Review the Question of the Day. Direct students record their thoughts in their Unit Guide. Then, have students turn to a partner and share their answers.\n\nTeaching Tip\nIf time permits, consider asking a few students to share with the whole class. You can record answers on the board or just spotlight key ideas aloud.",
+    "png_base64": null
+  },
+  {
+    "index": 28,
+    "slide_id": "g2694c47731d_3_56",
+    "notes": "☑️ Do This: Review the Key Vocabulary.",
+    "png_base64": null
+  },
+  {
+    "index": 29,
+    "slide_id": "g2669c93d226_0_77",
+    "notes": "💻 Transition: Direct students to Lesson 9, Level 2 to complete the End of Lesson Survey.",
+    "png_base64": null
+  }
+]

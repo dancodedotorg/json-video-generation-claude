@@ -1,0 +1,3 @@
+- Apply encryption concepts to different data states (at rest, in transit, in use)
+- Describe how encryption helps protect data
+- Differentiate between symmetric and asymmetric encryption

@@ -1,0 +1,33 @@
+# Google APIs
+google-api-python-client
+google-auth
+google-auth-httplib2
+google-genai
+
+# ElevenLabs TTS
+elevenlabs
+
+# PDF generation
+xhtml2pdf
+
+# HTTP client
+httpx
+
+# Markdown rendering
+markdown
+
+# Image processing
+Pillow
+
+# Audio processing (Gemini TTS PCM → MP3 conversion)
+# Also requires ffmpeg installed on your system (pydub uses it as a backend).
+# Python 3.13+: audioop was removed from the stdlib — add audioop-lts below.
+# Python 3.12:  audioop is still built-in — audioop-lts is not needed.
+pydub
+# audioop-lts  # uncomment if using Python 3.13+
+
+# Data validation
+pydantic
+
+# Utilities
+python-dotenv

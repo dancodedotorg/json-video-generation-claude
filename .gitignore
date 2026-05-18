@@ -1,0 +1,11 @@
+node_modules/
+pages/
+.env
+.venv
+*.pyc
+
+*.mp3
+*.png
+*.jpg
+/generation/**/*.html
+/**/__pycache__/

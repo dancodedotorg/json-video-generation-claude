@@ -1,0 +1,174 @@
+{
+  "video_name": "audio-tags-and-generation",
+  "unit": "standalone",
+  "lesson": "how-to-make-a-video",
+  "target_objectives": [],
+  "supporting_objectives": [],
+  "target_vocabulary": [],
+  "supporting_vocabulary": [],
+  "mode": "co-create",
+  "brief": "Audience: someone who has already watched the video-pipeline video and understands the overall pipeline flow. Angle: deep dive into the audio-tags and audio-generation steps - (1) why the audio-tags step exists and what it does, (2) the two audio generation providers (ElevenLabs vs Gemini) and when to use each, (3) which files to edit if you want to change how audio tags are generated (the reference guides in .claude/skills/video-audio-tags/references/), (4) how to add a new voice to ElevenLabs (voice ID constant in elevenlabs-gen.py), (5) how to add a new voice to Gemini (check Gemini TTS docs for available voice names, then add to AVAILABLE_VOICES in gemini-audio-gen.py). Also include one demo scene per existing voice - 4 ElevenLabs voices (Dan, Sam, Adam, Hope) and 5 Gemini voices (Zephyr, Puck, Aoede, Kore, Fenrir) - each scene narrated by that voice and introducing itself by name and character. Note: voice demo scenes require manual audio generation since the audio skill only handles one voice per run. Tone: tutorial documentary, consistent with the other how-to-make-a-video videos. Length: approximately 20 scenes.",
+  "width": 1600,
+  "height": 900,
+  "pipeline": {
+    "grounding": "complete",
+    "script": "complete",
+    "audio_tags": "complete",
+    "html": "complete",
+    "audio": "complete",
+    "assembled": false,
+    "html_mode": "html_templates_only"
+  },
+  "grounding": {},
+  "tts": {
+    "provider": "gemini",
+    "mode": "per_scene",
+    "voice": "Zephyr"
+  },
+  "scenes": [
+    {
+      "comment": "Title slide: 'Audio Tags and Voice Generation' as the main heading. Subtitle: 'A deep dive into the audio-tags and audio-generation stages of the video pipeline'. Clean, minimal layout consistent with the other how-to-make-a-video title slides.",
+      "speech": "This video goes deeper into the last two stages of the video pipeline - audio tags and audio generation. You will learn how expression tags work for each provider, which files to edit to tune or extend the system, and at the end, hear every available voice in action.",
+      "elevenlabs": "[happy] This video goes deeper into the last two stages of the video pipeline - audio tags and audio generation. You will learn how expression tags work for each provider, which files to edit to tune or extend the system, and at the end, hear every available voice in action.",
+      "gemini": "[warmly] This video goes deeper into the last two stages of the video pipeline - audio tags and audio generation. You will learn how expression tags work for each provider, which files to edit to tune or extend the system, and at the end, hear every available voice in action.",
+      "duration": "18.78s",
+      "audio": "audio/scene_01.mp3"
+    },
+    {
+      "comment": "Problem/solution slide: LEFT side shows a plain speech line labeled 'No tags - flat delivery'. RIGHT side shows the same line with bracketed tags included in the line, labeled 'With tags - expressive delivery'. A simple two-column before/after layout demonstrating the concept.",
+      "speech": "There are two audio generation models: ElevenLabs version 3, and Gemini 3.1 text-to-speech. Both use an audio tag system to add personality and emphasis to scripts. They appear as extra information in square brackets added to a speech.",
+      "elevenlabs": "[thoughtful] There are two audio generation models: ElevenLabs version 3, and Gemini 3.1 text-to-speech. Both use an audio tag system to add personality and emphasis to scripts. They appear as extra information in square brackets added to a speech.",
+      "gemini": "[clearly] There are two audio generation models: ElevenLabs version 3, and Gemini 3.1 text-to-speech. Both use an audio tag system to add personality and emphasis to scripts. They appear as extra information in square brackets added to a speech.",
+      "duration": "19.42s",
+      "audio": "audio/scene_02.mp3"
+    },
+    {
+      "comment": "File reference slide: A folder tree showing .claude/skills/video-audio-tags/references/ with two files highlighted: elevenlabs-tts-prompting-guide.md and gemini-tts-prompting-guide.md. Each file has a callout describing what it controls: approved tags, forbidden tags, and per-project override rules. A bold note at the bottom: 'Edit these files to change how the audio-tags skill behaves'.",
+      "speech": "The complete tag rules for both providers live in reference files inside the video-audio-tags skill folder. There is a separate guide for ElevenLabs and for Gemini. Each guide is a slightly-modified version of the prompting guides that exist in the documentation for ElevenLabs or Gemini, and can continue to be customized by just editing the markdown files.",
+      "elevenlabs": "[thoughtful] The complete tag rules for both providers live in reference files inside the video-audio-tags skill folder. There is a separate guide for ElevenLabs and for Gemini. Each guide is a slightly-modified version of the prompting guides that exist in the documentation for ElevenLabs or Gemini, and can continue to be customized by just editing the markdown files.",
+      "gemini": "[deliberately] The complete tag rules for both providers live in reference files inside the video-audio-tags skill folder. There is a separate guide for ElevenLabs and for Gemini. Each guide is a slightly-modified version of the prompting guides that exist in the documentation for ElevenLabs or Gemini, and can continue to be customized by just editing the markdown files.",
+      "duration": "24.74s",
+      "audio": "audio/scene_03.mp3"
+    },
+    {
+      "comment": "Gemini system slide: Heading 'Gemini Tag System'. LEFT side: a short code snippet of the persona prompt template - 'AUDIO PROFILE: The Clear Explainer / Style: Clear, warm, engaging / Transcript: {your text here}' - labeled 'Hardcoded persona wraps every scene'. RIGHT side: a short tag list showing [deliberately], [warmly], [curious], [seriously], [excitedly]. An arrow with callout: 'Tags should deviate from baseline, not reinforce it'.",
+      "speech": "One thing to note is that Gemini wraps every scene in a hardcoded persona called The Clear Explainer, which sets a warm, moderate baseline before the model processes any text. Because the baseline is already warm and clear, use Gemini tags to deviate from it - not to reinforce it. This is the key reason two verisons of these audio tags are generated, rather than using the same set for both providers.",
+      "elevenlabs": "[thoughtful] One thing to note is that Gemini wraps every scene in a hardcoded persona called The Clear Explainer, which sets a warm, moderate baseline before the model processes any text. Because the baseline is already warm and clear, use Gemini tags to deviate from it - not to reinforce it. This is the key reason two verisons of these audio tags are generated, rather than using the same set for both providers.",
+      "gemini": "[seriously] One thing to note is that Gemini wraps every scene in a hardcoded persona called The Clear Explainer, which sets a warm, moderate baseline before the model processes any text. Because the baseline is already warm and clear, use Gemini tags to deviate from it - not to reinforce it. This is the key reason two verisons of these audio tags are generated, rather than using the same set for both providers.",
+      "duration": "27.42s",
+      "audio": "audio/scene_04.mp3"
+    },
+    {
+      "comment": "Provider comparison table: Two columns, ElevenLabs and Gemini. Rows comparing: Output format (one combined voiceover.mp3 vs per-scene scene_NN.mp3 files), Duration source (character-level alignment from API response vs measured from each MP3), File names (audio/voiceover.mp3 vs audio/scene_NN.mp3), Padding (+0.5s for both). Clean grid layout with provider names as column headers.",
+      "speech": "The two providers differ in how they structure audio output. ElevenLabs combines all scenes into one file, joined by pause markers. It then uses an algorithm to calculate where each scene ends. Gemini works per scene - one audio file per scene, and duration is measured directly from each file. Both providers add half a second of padding to every measured duration.",
+      "elevenlabs": "[thoughtful] The two providers differ in how they structure audio output. ElevenLabs combines all scenes into one file, joined by pause markers. It then uses an algorithm to calculate where each scene ends. Gemini works per scene - one audio file per scene, and duration is measured directly from each file. Both providers add half a second of padding to every measured duration.",
+      "gemini": "[deliberately] The two providers differ in how they structure audio output. ElevenLabs combines all scenes into one file, joined by pause markers. It then uses an algorithm to calculate where each scene ends. Gemini works per scene - one audio file per scene, and duration is measured directly from each file. Both providers add half a second of padding to every measured duration.",
+      "duration": "29.06s",
+      "audio": "audio/scene_05.mp3"
+    },
+    {
+      "comment": "List differences between Elevenlabs and Gemini billing, probably with bullets.",
+      "speech": "Both providers use credits for billing. We have an ElevenLabs account that has a monthly credit limit that resets each month and is shared across several projects. Gemini credits are tied to our donated Google credits and have no monthly limit. Both providers have limits to how long of an audio file can be generated in a single request - Elevenlabs usually hits this before Gemini does, so videos over 3 minutes are sometimes easier to generate with Gemini.",
+      "elevenlabs": "[thoughtful] Both providers use credits for billing. We have an ElevenLabs account that has a monthly credit limit that resets each month and is shared across several projects. Gemini credits are tied to our donated Google credits and have no monthly limit. Both providers have limits to how long of an audio file can be generated in a single request - Elevenlabs usually hits this before Gemini does, so videos over 3 minutes are sometimes easier to generate with Gemini.",
+      "gemini": "Both providers use credits for billing. We have an ElevenLabs account that has a monthly credit limit that resets each month and is shared across several projects. Gemini credits are tied to our donated Google credits and have no monthly limit. Both providers have limits to how long of an audio file can be generated in a single request - Elevenlabs usually hits this before Gemini does, so videos over 3 minutes are sometimes easier to generate with Gemini.",
+      "duration": "30.58s",
+      "audio": "audio/scene_06.mp3"
+    },
+    {
+      "comment": "Code snippet slide for adding an ElevenLabs voice: Show the top of elevenlabs-gen.py. Highlight AVAILABLE_VOICES = ['Dan', 'Sam', 'Adam', 'Hope', 'River'] with 'River' shown in a different color as the newly added entry. Below it, highlight the voice_ids dict with a new entry 'River: <voice-id-string>' also highlighted. Two labeled callout arrows: 'Step 1 - add name to list' and 'Step 2 - add ID to dict'. Small note: 'Voice ID comes from your ElevenLabs account'.",
+      "speech": "To add a new voice to ElevenLabs generation, you need to find the voice in the ElevenLabs studio and copy its Voice ID, then you can ask Claude to add it to the appropriate files and skills. Voice clones work the same way with their Voice IDs.",
+      "elevenlabs": "[thoughtful] To add a new voice to ElevenLabs generation, you need to find the voice in the ElevenLabs studio and copy its Voice ID, then you can ask Claude to add it to the appropriate files and skills. Voice clones work the same way with their Voice IDs.",
+      "gemini": "[deliberately] To add a new voice to ElevenLabs generation, you need to find the voice in the ElevenLabs studio and copy its Voice ID, then you can ask Claude to add it to the appropriate files and skills. Voice clones work the same way with their Voice IDs.",
+      "duration": "17.50s",
+      "audio": "audio/scene_07.mp3"
+    },
+    {
+      "comment": "Code snippet slide for adding a Gemini voice: LEFT side shows the AVAILABLE_VOICES list in gemini-audio-gen.py with a new voice name added, highlighted. Callout: 'Name only - no ID needed'. RIGHT side shows a browser/doc icon labeled 'Google AI developer docs > TTS voice names' - the place to find valid names. Two-step layout: find the name in the docs, add it to the list.",
+      "speech": "Adding a Gemini voice is similar, but there is a smaller selection of voices. Gemini voices are identified by name, not ID. Gemini publishes a list of supported voice names in the Google AI developer documentation. Find a voice you want, check that it is listed there, then ask Claude to update the files and skills.",
+      "elevenlabs": "[thoughtful] Adding a Gemini voice is similar, but there is a smaller selection of voices. Gemini voices are identified by name, not ID. Gemini publishes a list of supported voice names in the Google AI developer documentation. Find a voice you want, check that it is listed there, then ask Claude to update the files and skills.",
+      "gemini": "[deliberately] Adding a Gemini voice is similar, but there is a smaller selection of voices. Gemini voices are identified by name, not ID. Gemini publishes a list of supported voice names in the Google AI developer documentation. Find a voice you want, check that it is listed there, then ask Claude to update the files and skills.",
+      "duration": "23.38s",
+      "audio": "audio/scene_08.mp3"
+    },
+    {
+      "comment": "Transition slide: Heading 'The Voices'. A grid of 9 labeled chips arranged in two rows - top row labeled 'ElevenLabs' showing 4 chips (Dan, Sam, Adam, Hope), bottom row labeled 'Gemini' showing 5 chips (Zephyr, Puck, Aoede, Kore, Fenrir). Subtitle below the grid: 'Each of the following scenes is narrated by a different voice'.",
+      "speech": "The rest of this video is voice demos. Each of the next nine scenes is narrated by a different voice and introduces itself by name, provider, and character description.",
+      "elevenlabs": "[excited] The rest of this video is voice demos. Each of the next nine scenes is narrated by a different voice and introduces itself by name, provider, and character description.",
+      "gemini": "[excitedly] The rest of this video is voice demos. Each of the next nine scenes is narrated by a different voice and introduces itself by name, provider, and character description.",
+      "duration": "12.70s",
+      "audio": "audio/scene_09.mp3"
+    },
+    {
+      "comment": "Voice card for Dan: Provider label 'ElevenLabs' in a small tag at the top. Large centered name 'Dan'. Character description below: 'Warm, clear, neutral American'. Small badge: 'Default voice'. Clean minimal layout with the design system color palette.",
+      "speech": "Hi, I'm Dan. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible. ",
+      "elevenlabs": "Hi, I'm Dan. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Dan. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "21.14s",
+      "audio": "audio/dan-elevenlabs.mp3"
+    },
+    {
+      "comment": "Voice card for Sam: Provider label 'ElevenLabs' in a small tag at the top. Large centered name 'Sam'. Character description below: 'Calm, professional'. Clean minimal layout.",
+      "speech": "Hi, I'm Sam. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Sam. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Sam. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "20.70s",
+      "audio": "audio/sam-elevenlabs.mp3"
+    },
+    {
+      "comment": "Voice card for Adam: Provider label 'ElevenLabs' in a small tag at the top. Large centered name 'Adam'. Character description below: 'Deep, authoritative'. Clean minimal layout.",
+      "speech": "Hi, I'm Adam. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Adam. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Adam. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "22.14s",
+      "audio": "audio/adam-elevenlabs.mp3"
+    },
+    {
+      "comment": "Voice card for Hope: Provider label 'ElevenLabs' in a small tag at the top. Large centered name 'Hope'. Character description below: 'Bright, friendly'. Clean minimal layout.",
+      "speech": "Hi, I'm Hope. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Hope. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Hope. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "20.50s",
+      "audio": "audio/hope-elevenlabs.mp3"
+    },
+    {
+      "comment": "Voice card for Zephyr: Provider label 'Gemini' in a small tag at the top. Large centered name 'Zephyr'. Character description below: 'Bright, upbeat'. Small badge: 'Default Gemini voice'. Clean minimal layout.",
+      "speech": "Hi, I'm Zephyr. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Zephyr. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Zephyr. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "20.70s",
+      "audio": "audio/zephyr-gemini.mp3"
+    },
+    {
+      "comment": "Voice card for Puck: Provider label 'Gemini' in a small tag at the top. Large centered name 'Puck'. Character description below: 'Upbeat, energetic'. Clean minimal layout.",
+      "speech": "Hi, I'm Puck. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Puck. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Puck. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "20.58s",
+      "audio": "audio/puck-gemini.mp3"
+    },
+    {
+      "comment": "Voice card for Aoede: Provider label 'Gemini' in a small tag at the top. Large centered name 'Aoede'. Character description below: 'Warm, expressive'. Clean minimal layout.",
+      "speech": "Hi, I'm Aoede. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Aoede. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Aoede. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "22.46s",
+      "audio": "audio/aoede-gemini.mp3"
+    },
+    {
+      "comment": "Voice card for Kore: Provider label 'Gemini' in a small tag at the top. Large centered name 'Kore'. Character description below: 'Firm, clear'. Clean minimal layout.",
+      "speech": "Hi, I'm Kore. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Kore. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Kore. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "22.30s",
+      "audio": "audio/kore-gemini.mp3"
+    },
+    {
+      "comment": "Voice card for Fenrir: Provider label 'Gemini' in a small tag at the top. Large centered name 'Fenrir'. Character description below: 'Grounded, measured'. Clean minimal layout.",
+      "speech": "Hi, I'm Fenrir. This is what I sound like when I'm thoughtful. This is what I sound like when I'm excited. Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "elevenlabs": "Hi, I'm Fenrir. [thoughtful] This is what I sound like when I'm thoughtful. [excited] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "gemini": "Hi, I'm Fenrir. [thoughtfully] This is what I sound like when I'm thoughtful. [excitedly] This is what I sound like when I'm excited. [clearly] Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible.",
+      "duration": "22.90s",
+      "audio": "audio/fenrir-gemini.mp3"
+    }
+  ]
+}

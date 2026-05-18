@@ -1,0 +1,259 @@
+{
+  "video_name": "video-pipeline",
+  "unit": "standalone",
+  "lesson": "how-to-make-a-video",
+  "target_objectives": [
+    "Explain the full video generation pipeline from unit setup through assembly.",
+    "Run each skill in the correct order to produce a playable JSON video."
+  ],
+  "supporting_objectives": [],
+  "target_vocabulary": [],
+  "supporting_vocabulary": [],
+  "width": 1600,
+  "height": 900,
+  "pipeline": {
+    "grounding": "complete",
+    "script": "complete",
+    "html": "pending",
+    "audio_tags": "pending",
+    "audio": "pending",
+    "assembled": false
+  },
+  "tts": {},
+  "scenes": [
+    {
+      "comment": "Title slide: 'How to Generate a Video' as the main heading. Subtitle: 'A complete walkthrough of the json-video-player pipeline'. Clean, minimal layout with the project name or a subtle pipeline icon.",
+      "duration": "",
+      "html": "",
+      "speech": "In this tutorial, you will walk through the complete json-video-player pipeline - from setting up a new unit all the way to a fully assembled, playable video. Each step has its own slide, including every file that gets created and every moment where you stop and review.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "System diagram: a 'script.json' file icon in the center with labeled callouts pointing to key parts of the file: scenes, speech, HTML, audio. An arrow leads from the file to a browser player rendering a slide.",
+      "duration": "",
+      "html": "",
+      "speech": "The pipeline produces a script.json file. Each scene in that file has an HTML slide for the visual, a speech line for the narration, and an audio clip. Load that file into the browser player and it plays back like a video.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Pipeline roadmap: a vertical flowchart showing the full sequence. Top section labeled 'One-time unit setup': /unit-init. Middle section labeled 'One-time per lesson': /lesson-init, /lesson-ground, /lesson-plan. Bottom section labeled 'Per video': /video-create expanded into five sub-stages: Script, HTML, Audio Tags, Audio, Assemble.",
+      "duration": "",
+      "html": "",
+      "speech": "Here is the full pipeline from start to finish. Unit setup happens once. Lesson setup, grounding, and planning happen once per lesson. Then for each video, you run video-create, which itself runs five stages in sequence.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Skill slide for /unit-init. Command '/unit-init <unit-slug>' displayed prominently. Below it, a labeled output file 'unit.json' with a short snippet showing a list of lessons with their IDs and titles.",
+      "duration": "",
+      "html": "",
+      "speech": "Start with the unit init skill. Pass the unit slug from the Code.org URL and it fetches the lesson list, creating unit.json. This file maps lesson titles to their IDs - every subsequent skill uses it to find the right lesson.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Skill slide for /lesson-init. Command '/lesson-init <unit-slug> <lesson-name>' displayed prominently. Below it, a small confirmation prompt box: 'Matched Lesson 1: Talking to Machines (id: 9520955). Proceed? [y/n]'",
+      "duration": "",
+      "html": "",
+      "speech": "Run the lesson init skill next. It does a fuzzy match on your lesson name, shows you what it found, and asks you to confirm. This prevents accidentally initializing the wrong lesson.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "File slide for sources.csv. Heading: 'New file: sources.csv'. Show a grouped list of what it contains: Slides/docs (with example URLs), Levels (with IDs), Objectives (N entries), Vocabulary (N entries). Small warning note: 'Auto-populated from Code.org public resources only.'",
+      "duration": "",
+      "html": "",
+      "speech": "After confirming, the lesson init skill creates sources.csv in your lesson folder. It auto-populates from Code.org's public resources - but that list often omits teacher slide decks and internal docs. That is why the next step is a hard stop.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for sources.csv review. Warning icon at top. Show the gate prompt: a grouped list of rows by type, a warning about commonly missing items (teacher slide deck, Google Drive files), and three response options: confirm, add URLs, remove rows.",
+      "duration": "",
+      "html": "",
+      "speech": "The skill stops and shows you every row in sources.csv. This is a mandatory gate - it will not move forward until you explicitly confirm. Check for missing slide decks or documents, paste in any URLs to add, and reply when the list is complete.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Skill slide for /lesson-ground. Command '/lesson-ground <unit-slug> <lesson-slug>' displayed prominently. Below it, a completeness check prompt: 'About to fetch these sources. Anything missing? Reply looks good to proceed.'",
+      "duration": "",
+      "html": "",
+      "speech": "The lesson ground skill fetches your source materials into a folder shared by all videos in the lesson. Before running, it shows you the full fetch list and checks once more whether anything is missing. This is your last chance to add a source before grounding runs.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "File slide for the source/ folder. Heading: 'New folder: source/'. Labeled directory tree showing: objectives.md, vocabulary.md, a slide-deck subfolder containing slides_data.json and slides_notes.pdf, and lesson_levels.json. Brief label on each file describing what it contains.",
+      "duration": "",
+      "html": "",
+      "speech": "After grounding completes, the source folder holds everything: objectives and vocabulary as markdown files, slide data as JSON with speaker notes as a PDF, and lesson level content. Every subsequent script generation reads directly from these files.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Skill slide for /lesson-plan. Command '/lesson-plan <unit-slug> <lesson-slug>' displayed prominently. Subtitle: 'Reads source materials, analyzes objectives, recommends how to split the lesson into videos - with three check-ins.'",
+      "duration": "",
+      "html": "",
+      "speech": "The lesson plan skill reads your grounded source materials, analyzes which objectives belong together, and proposes a set of plans for splitting the lesson into videos. It walks you through three check-ins before creating anything.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for video type selection. The four types listed with brief descriptions: concept (one scene per slide, full tutorial narration), summary (thematic grouping, shorter overview), re-teach (remediation for students who finished the lesson), co-create (you provide a custom brief).",
+      "duration": "",
+      "html": "",
+      "speech": "First, you choose what type of video you want. Concept covers one slide per scene with detailed narration. Summary groups content thematically for a shorter overview. Re-teach targets students who need another pass. Co-create lets you provide a fully custom brief.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for plan selection. A comparison table showing Plan A (fully split, one video per objective), Plan B (fully combined, all objectives in one video with an overlong warning), and Plan C (intermediate split with two videos). Each plan shows estimated lengths.",
+      "duration": "",
+      "html": "",
+      "speech": "Next, the skill presents a set of plans - typically A, B, and C. Each plan shows a different way to group objectives across videos, with estimated lengths per video. You pick the one that fits, or describe a custom split.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for video name confirmation. A short list of proposed slugs (e.g., 'how-ai-thinks', 'prompts-and-patterns') with the prompt: 'Confirm these names, or suggest changes.' Note about naming convention: lowercase, hyphenated, 2-4 words.",
+      "duration": "",
+      "html": "",
+      "speech": "Finally, you confirm the video names. The skill proposes lowercase hyphenated slugs. Rename any of them before the folders are created - these names become the folder paths and stay with the project.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "File slide for lesson-plan.json and video folders. Left side: a lesson-plan.json snippet showing two videos with their target objectives listed. Right side: a folder tree showing two video folders, each containing empty audio/, images/, and scenes/ subfolders.",
+      "duration": "",
+      "html": "",
+      "speech": "The skill writes lesson-plan.json with the full objective assignments for each video, then creates all the video folders. Each folder starts empty - the video-create pipeline fills them in.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Skill slide for /video-create. Command '/video-create <unit-slug> <lesson-slug> <video-name>' displayed prominently. Below it, a horizontal five-stage pipeline diagram: Script -> HTML -> Audio Tags -> Audio -> Assemble. A small pause/check icon sits between each stage to indicate a review gate.",
+      "duration": "",
+      "html": "",
+      "speech": "With your videos planned, run the video create skill for each one. It orchestrates all five stages - script, HTML slides, audio tags, audio generation, and final assembly. A review gate sits between every stage.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Stage slide for /video-script. Heading: 'Stage 1 - Script'. Show the skill reading source files (objectives.md, slides, levels) on the left, and producing a scenes array in script.json on the right, with comment and speech fields visible for two example scenes.",
+      "duration": "",
+      "html": "",
+      "speech": "The video script skill reads your grounded source materials and the target objectives for this specific video, then generates the voiceover script. Each scene gets a comment describing what the visual should show and a speech line for the narration.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for script approval. A numbered list showing three example scenes, each with its comment and speech displayed. Below it the approval prompt: 'Does this script look good? You can revise scenes, change the tone, add or remove content, or approve and move on.'",
+      "duration": "",
+      "html": "",
+      "speech": "The skill presents the full script for your review. You can ask for specific revisions - shorten a scene, adjust the tone, add or remove content - and iterate until you are satisfied. When you approve, the script stage is marked complete and HTML generation begins.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Stage slide for /video-html. Heading: 'Stage 2 - HTML Slides'. Show each scene's comment field being read on the left, and a self-contained HTML document being produced on the right, with a small preview of a rendered slide.",
+      "duration": "",
+      "html": "",
+      "speech": "The video HTML skill reads each scene's comment to understand what the visual should show, then generates a complete, self-contained HTML document for each scene. It has two check-ins before generating anything.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for mode selection. Two modes shown side by side. Mode C: 'AI-generated image per scene - uniform visual style, faster.' Mode D: 'Full toolkit - HTML templates, SVG diagrams, and image generation chosen per scene based on content type.'",
+      "duration": "",
+      "html": "",
+      "speech": "First you choose a mode. Mode C generates an AI image for every scene - fast and visually consistent. Mode D uses the full toolkit, picking the best approach for each scene individually: templates for structured content, SVG for diagrams, image generation for illustrations.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for scene plan approval. A scene plan table: columns for scene number, planned visual approach, and a brief description of what the slide will show. Three example rows filled in. Approval prompt at the bottom.",
+      "duration": "",
+      "html": "",
+      "speech": "Then the skill presents a scene plan - one row per scene showing the visual approach and what it will contain. You approve or request changes before any HTML is generated. This prevents wasted work if the plan is off.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Stage slide for /video-audio-tags. Heading: 'Stage 3 - Audio Tags'. Before/after example: left side shows plain speech text, right side shows the same text with ElevenLabs bracketed tags and a Gemini tagged version below it.",
+      "duration": "",
+      "html": "",
+      "speech": "The audio tags skill adds expression tags to each speech line for the text-to-speech providers. ElevenLabs and Gemini use different tag systems, so it produces both versions in one pass - one field per provider per scene.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for audio tag approval. A compact table showing three scenes side by side: speech text, elevenlabs tagged version, gemini tagged version. Approval prompt: 'Do the audio tags look right? Adjust by scene, provider, or energy level, or say looks good.'",
+      "duration": "",
+      "html": "",
+      "speech": "The skill shows the before-and-after for every scene. You can ask it to adjust the energy level, tune a specific provider, or change individual scene tags. Approve when the expression feels right.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Stage slide for /video-audio. Heading: 'Stage 4 - Audio Generation'. Show two provider logos or labels (ElevenLabs, Gemini) with available voice names listed. Below: output files shown as a short list: audio/scene_01.mp3, scene_02.mp3, etc. A 'fake mode' badge on the side with label 'skips API, uses placeholder durations'.",
+      "duration": "",
+      "html": "",
+      "speech": "The video audio skill generates the actual audio files. It supports ElevenLabs and Gemini as providers, each with a set of available voices. There is also a fake mode that skips the API and assigns placeholder durations - useful when you are not ready to spend credits.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Check-in gate slide for voice and mode confirmation. The confirmation prompt: provider selection (ElevenLabs / Gemini), voice name options listed, real/fake toggle. Example: 'ElevenLabs, voice: Dan, real generation. Confirm? [y/n]'",
+      "duration": "",
+      "html": "",
+      "speech": "Before running, the skill confirms your provider, voice, and whether to generate real or fake audio. Once you confirm, it calls the API, saves MP3 files to the audio folder, and writes the duration of each scene back to script.json.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Stage slide for /video-assemble. Heading: 'Stage 5 - Assembly'. Diagram: audio MP3 files and local image files on the left, a base64 encoding step in the middle, a single self-contained script.json on the right. Label the output: 'All assets embedded. Player-ready.'",
+      "duration": "",
+      "html": "",
+      "speech": "The video assemble skill is the final stage. It reads all the audio files, encodes them as base64, and embeds them directly into script.json. Images are inlined the same way. The result is a single, fully self-contained file with everything the player needs.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    },
+    {
+      "comment": "Final output slide. A browser window showing the json-video-player at edcodedotorg.github.io/json-video-player with a script.json file loaded and the play button highlighted. Display the URL prominently. Clean, celebratory feel.",
+      "duration": "",
+      "html": "",
+      "speech": "Head to the json video player online - the URL is shown on screen - load your assembled script.json, and preview your video. That is the complete pipeline - from unit init to finished video.",
+      "elevenlabs": "",
+      "gemini": "",
+      "audio": ""
+    }
+  ]
+}

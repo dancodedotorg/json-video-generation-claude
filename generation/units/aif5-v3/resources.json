@@ -1,0 +1,1244 @@
+{
+  "unit_summary": {
+    "title": "Unit 5 - AI-Powered Threats and Defenses",
+    "name": "aif5-v3",
+    "link": "/courses/artificial-intelligence-foundations-2026/units/5",
+    "lessons": [
+      {
+        "key": "Lesson 1: Introduction to Cybersecurity",
+        "position": 1,
+        "displayName": "Lesson 1: Introduction to Cybersecurity",
+        "preparation": "- Print copies of the Unit Guide (one for each student)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386807,
+              "key": "the_day_everything_broke",
+              "name": "The Day Everything Broke",
+              "url": "https://docs.google.com/document/d/1obeGX3P3zDFvJI49eXxadd1fB6pYtTqTMf6SwNMNbyM/view",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            },
+            {
+              "id": 17386808,
+              "key": "unit_guide_1",
+              "name": "Unit Guide",
+              "url": "https://docs.google.com/document/d/17wdJVaz96CeAT6Kbbs_IqnyoWWLQjYrdI0ms3F9um7o/view",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "cybersecurity",
+            "word": "cybersecurity",
+            "definition": "the practice of protecting computers, networks, and personal data from being stolen, changed, or damaged"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779526,
+            "description": "Describe how failures may stem from poor design, user error, or technical breakdowns"
+          },
+          {
+            "id": 8779520,
+            "description": "Identify ways digital systems can fail and impact users’ daily lives"
+          },
+          {
+            "id": 8779522,
+            "description": "Reflect on how failures affect different users emotionally and functionally"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "IC",
+            "categoryDescription": "Impacts of Computing",
+            "shortcode": "3A-IC-24",
+            "description": "Evaluate the ways computing impacts personal, ethical, social, economic, and cultural practices."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-18",
+            "description": "Explain security issues that might lead to compromised computer programs."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "IC",
+            "categoryDescription": "Impacts of Computing",
+            "shortcode": "3B-IC-25",
+            "description": "Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/1",
+        "title": "Lesson 1: Introduction to Cybersecurity"
+      },
+      {
+        "key": "Lesson 2: Cybersecurity Threats",
+        "position": 2,
+        "displayName": "Lesson 2: Cybersecurity Threats",
+        "preparation": "- Print copies of the Cybersecurity Threats activity guide (one for each student)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386781,
+              "key": "cybersecurity_threats",
+              "name": "Cybersecurity Threats",
+              "url": "https://docs.google.com/document/d/18AW6pInMb-E3-JYvM-RC4oEtlLjewgY_BfZ3MfCu0rI/edit?usp=drive_link",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "malware",
+            "word": "Malware",
+            "definition": "software intended to damage a computing system or to take partial control over its operation"
+          },
+          {
+            "key": "threat",
+            "word": "threat",
+            "definition": "any potential cause of harm to a computer system or network"
+          },
+          {
+            "key": "vulnerability",
+            "word": "vulnerability",
+            "definition": "a weakness in a system that could be exploited by an attacker"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779525,
+            "description": "Describe system-level threats such as malware, ransomware, weak default settings, or misconfigured file sharing."
+          },
+          {
+            "id": 8779530,
+            "description": "Explain how AI may increase the speed or scale of these threats."
+          },
+          {
+            "id": 8779529,
+            "description": "Explain how attackers exploit technical vulnerabilities to gain control, disrupt access, or corrupt data."
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "IC",
+            "categoryDescription": "Impacts of Computing",
+            "shortcode": "3A-IC-24",
+            "description": "Evaluate the ways computing impacts personal, ethical, social, economic, and cultural practices."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-05",
+            "description": "Give examples to illustrate how sensitive data can be affected by malware and other attacks."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-06",
+            "description": "Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-08",
+            "description": "Describe how artificial intelligence drives many software and physical systems."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-18",
+            "description": "Explain security issues that might lead to compromised computer programs."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/2",
+        "title": "Lesson 2: Cybersecurity Threats"
+      },
+      {
+        "key": "Lesson 3: Phishing and Password Attacks",
+        "position": 3,
+        "displayName": "Lesson 3: Phishing and Password Attacks",
+        "preparation": "- Provide copies of the Hackable Human activity guide (one for each student)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386792,
+              "key": "hackable_human",
+              "name": "Hackable Human",
+              "url": "https://docs.google.com/document/d/1owIfysW2x4L7v-2BMGz1NkkrSwuU3XhrsjyXXyLhKmg/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "phishing",
+            "word": "Phishing",
+            "definition": "a technique that attempts to trick a user into providing personal information. That personal information can then be used to access sensitive online resources, such as bank accounts and emails"
+          },
+          {
+            "key": "attack",
+            "word": "attack",
+            "definition": "a malicious activity aimed at disrupting, damaging, destroying or gaining unauthorized access to information systems, networks or the data they contain"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779534,
+            "description": "Analyze how phishing and password attacks exploit human behavior— such as trust, emotion, and predictability"
+          },
+          {
+            "id": 8779523,
+            "description": "Investigate identity-based cyber threats by analyzing phishing messages and password-related breaches"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "IC",
+            "categoryDescription": "Impacts of Computing",
+            "shortcode": "3A-IC-30",
+            "description": "Evaluate the social and economic implications of privacy in the context of safety, law, or ethics."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-05",
+            "description": "Give examples to illustrate how sensitive data can be affected by malware and other attacks."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-18",
+            "description": "Explain security issues that might lead to compromised computer programs."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3B-NI-04",
+            "description": "Compare ways software developers protect devices and information from unauthorized access."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/3",
+        "title": "Lesson 3: Phishing and Password Attacks"
+      },
+      {
+        "key": "Lesson 4: Phishing with AI",
+        "position": 4,
+        "displayName": "Lesson 4: Phishing with AI",
+        "preparation": "- Print copies of the Phishing Prevention Strategies Activity Guide (one for each student)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386799,
+              "key": "phishing_prevention_strategies",
+              "name": "Phishing Prevention Strategies",
+              "url": "https://docs.google.com/document/d/1pfye3_eLKoTmBSKerGG5euxtCXoJgJ98ENPkIsLHf2o/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            },
+            {
+              "id": 17386804,
+              "key": "social_engineering",
+              "name": "Social Engineering",
+              "url": "https://drive.google.com/file/d/1HGYmE9GX2vIeM4dcEvgSipr0LooZ849m/view?usp=drive_link",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Video"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "deepfake",
+            "word": "deepfake",
+            "definition": "a video or audio that has been manipulated using AI to look or sound like a real person"
+          },
+          {
+            "key": "smishing",
+            "word": "smishing",
+            "definition": "a type of phishing that happens over text message (SMS)"
+          },
+          {
+            "key": "social_engineering",
+            "word": "social engineering",
+            "definition": "manipulating people into giving up private information or doing something risky"
+          },
+          {
+            "key": "vishing",
+            "word": "vishing",
+            "definition": "a type of phishing that happens over phone call or voicemail"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779528,
+            "description": "Compare basic strategies for prevention"
+          },
+          {
+            "id": 8779515,
+            "description": "Examine how attackers use deception to manipulate people into revealing sensitive information or taking risky actions"
+          },
+          {
+            "id": 8779518,
+            "description": "Explain how AI tools (e.g., generative text, deepfake video, voice cloning, chatbot mimicry) increase the realism, reach, and personalization of social engineering attacks"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-05",
+            "description": "Give examples to illustrate how sensitive data can be affected by malware and other attacks."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-06",
+            "description": "Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-08",
+            "description": "Describe how artificial intelligence drives many software and physical systems."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/4",
+        "title": "Lesson 4: Phishing with AI"
+      },
+      {
+        "key": "Lesson 5: Successful Cybersecurity Stories",
+        "position": 5,
+        "displayName": "Lesson 5: Successful Cybersecurity Stories",
+        "preparation": "- Print copies of the Defense in Action activity guide (one per student)\n- Print copies of the Case Studies (one case study per student)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386779,
+              "key": "case_studies",
+              "name": "Case Studies",
+              "url": "https://docs.google.com/document/d/1khRrorNSL8gjF4LSUBZ-5linkG2Jb_gAZzWugMdAYW4/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17386783,
+              "key": "defense_in_action_1",
+              "name": "Defense in Action",
+              "url": "https://docs.google.com/document/d/14ECzQYzQ2XNkGhcCpPhjTyt3GMDatBLKgAapJ55avqA/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "curriculum",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779541,
+            "description": "Evaluate different defenses to determine what made them effective"
+          },
+          {
+            "id": 8779535,
+            "description": "Explain how system design, human behavior, and AI can work together to prevent a cyber threat"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-06",
+            "description": "Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-08",
+            "description": "Describe how artificial intelligence drives many software and physical systems."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/5",
+        "title": "Lesson 5: Successful Cybersecurity Stories"
+      },
+      {
+        "key": "Lesson 6: Confidentiality, Integrity, and Availability",
+        "position": 6,
+        "displayName": "Lesson 6: Confidentiality, Integrity, and Availability",
+        "preparation": "- Prepare copies of the Investigate a CIA Scenario: Cases handout (one per group)\n- Prepare copies of the Investigate a CIA Scenario: Attacker/Defender activity guide (one per group)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386794,
+              "key": "investigate_a_cia_scenario_-_scenario_files",
+              "name": "Investigate a CIA Scenario - Scenario Files",
+              "url": "https://docs.google.com/document/d/1GbUuawSv3U2DthbvwDOVg5P6-oGLPzGtt2qlb9JjpEA/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17386795,
+              "key": "investigate_a_cia_scenario_attacker_defender",
+              "name": "Investigate a CIA Scenario: Attacker/Defender",
+              "url": "https://docs.google.com/document/d/1b7-s3lc2fthmqHlfGlXn39aMuejFy5B0jS0hLrm6FAw/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "cia_triad",
+            "word": "CIA Triad",
+            "definition": "a set of core rules for protecting information and stands for Confidentiality, Integrity, and Availability"
+          },
+          {
+            "key": "availability",
+            "word": "availability",
+            "definition": "making information accessible to the people who need it, when they need it"
+          },
+          {
+            "key": "confidentiality",
+            "word": "confidentiality",
+            "definition": "keeping information private so only the right people can see it"
+          },
+          {
+            "key": "integrity",
+            "word": "integrity",
+            "definition": "ensuring that information stays correct and hasn't been changed without permission"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779533,
+            "description": "Describe how a system vulnerability allowed a confidentiality, integrity, or availability failure and propose a user-centered fix"
+          },
+          {
+            "id": 8779511,
+            "description": "Identify cybersecurity failures based on their impact on confidentiality, integrity, or availability (CIA Triad)"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-05",
+            "description": "Give examples to illustrate how sensitive data can be affected by malware and other attacks."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-06",
+            "description": "Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-07",
+            "description": "Compare various security measures, considering tradeoffs between the usability and security of a computer system."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-18",
+            "description": "Explain security issues that might lead to compromised computer programs."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/6",
+        "title": "Lesson 6: Confidentiality, Integrity, and Availability"
+      },
+      {
+        "key": "Lesson 7: Authentication, Authorization, and Accounting",
+        "position": 7,
+        "displayName": "Lesson 7: Authentication, Authorization, and Accounting",
+        "preparation": "- Print and cut out one full set of Access Control Scenario Cards for the entire class\n- Print and cut out a set of Authentication Method Cards (one copy per station)\n- Print out the Station Instruction Pages (pages 3-6 in the Station Setup and Instructions teacher resource)\n- Provide multiple sticky notes for each station",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386766,
+              "key": "access_control_scenario_cards_1",
+              "name": "Access Control Scenario Cards",
+              "url": "https://docs.google.com/presentation/d/1RjZcXpwEtnKeVmfLhuRJMyIu7FDdFrSzi7bbrLmMj7E/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "curriculum",
+              "type": "Handout"
+            },
+            {
+              "id": 17386777,
+              "key": "authentication_method_cards",
+              "name": "Authentication Method Cards",
+              "url": "https://docs.google.com/presentation/d/1r7gmPcIga3Cq5wKAqkGFUuB9jZlu3strvpSSWvIX3e4/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "aaa_tools",
+            "word": "AAA tools",
+            "definition": "a set of tools used in cybersecurity to help systems protect information and manage what users can do"
+          },
+          {
+            "key": "accounting",
+            "word": "accounting",
+            "definition": "when a system keeps track of what users do so suspicious activity can be detected and reviewed"
+          },
+          {
+            "key": "authentication",
+            "word": "authentication",
+            "definition": "the process a system uses to check that you are who you say you are"
+          },
+          {
+            "key": "authorization",
+            "word": "authorization",
+            "definition": "rules a system uses to decide what you’re allowed to do once you’re logged in"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779510,
+            "description": "Apply authentication and access control models to real-world scenarios"
+          },
+          {
+            "id": 8779521,
+            "description": "Explain how systems verify identity and manage access to information"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "CS",
+            "categoryDescription": "Computing Systems",
+            "shortcode": "3A-CS-01",
+            "description": "Explain how abstractions hide the underlying implementation details of computing systems embedded in everyday objects."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-06",
+            "description": "Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-07",
+            "description": "Compare various security measures, considering tradeoffs between the usability and security of a computer system."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3B-NI-04",
+            "description": "Compare ways software developers protect devices and information from unauthorized access."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/7",
+        "title": "Lesson 7: Authentication, Authorization, and Accounting"
+      },
+      {
+        "key": "Lesson 8: AAA and AI",
+        "position": 8,
+        "displayName": "Lesson 8: AAA and AI",
+        "preparation": "- Print copies of the Fraud Detection Investigation Activity Guide (one copy per group)\n- Print copies of the four different user profiles",
+        "resources": {
+          "Teacher": [
+            {
+              "id": 17389234,
+              "key": "aaa_and_ai",
+              "name": "AAA and AI",
+              "url": "https://docs.google.com/presentation/d/1gtjg3TyBdRwjwA4NOLQEjwtG1WNlx505HicRtzkQTYk/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Teacher",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Slides"
+            },
+            {
+              "id": 17389233,
+              "key": "_key_user_profiles_audit_log_suspicious_activity_1",
+              "name": "[KEY] User Profiles' Audit Log Suspicious Activity",
+              "url": "https://docs.google.com/document/d/1UjbILX-9ROJQTIQZ6nUjaE7qVxCYGkGR1CVXdiIuvIw/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Teacher",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Answer Key"
+            }
+          ],
+          "Student": [
+            {
+              "id": 17386772,
+              "key": "audit_logs_profile_1_jordan_p_",
+              "name": "Audit Logs Profile 1: Jordan P.",
+              "url": "https://docs.google.com/document/d/1GRBeFTM2ZnkZnTbZs6TPJsKO7Yu0ZBIbYnFX1nMiwwQ/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17386773,
+              "key": "audit_logs_profile_2_sana_r_",
+              "name": "Audit Logs Profile 2: Sana R.",
+              "url": "https://docs.google.com/document/d/1PWv-Ml0uWkXhHpiXJpRBscK_lFK4iOvAYeDboSVcG-M/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17389235,
+              "key": "audit_logs_profile_3_amara_t",
+              "name": "Audit Logs Profile 3: Amara T",
+              "url": "https://docs.google.com/document/d/1Wsw61alnuJW1EPdb93Z1s5qo5wNE4xWS-A6mqi4m2fU/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17386775,
+              "key": "audit_logs_profile_4_omar_m_",
+              "name": "Audit Logs Profile 4: Omar M.",
+              "url": "https://docs.google.com/document/d/1yGNSBj9MVcrx32Ifl1BJFc8YlnxsGOkw2E20aPWRAMY/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17386790,
+              "key": "fraud_detection_investigation",
+              "name": "Fraud Detection Investigation",
+              "url": "https://docs.google.com/document/d/1Qvbw8JRyfFlhEYVjhy-IF58Cjk1rqZfB-WlXOORNQs4/edit?tab=t.0#heading=h.nt5j74w7fpmt",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779513,
+            "description": "Analyze how AI supports security features like fraud detection, anomaly detection, and adaptive authentication"
+          },
+          {
+            "id": 8779517,
+            "description": "Explain how AI is used in threat detection to identify suspicious patterns"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "DA",
+            "categoryDescription": "Data & Analysis",
+            "shortcode": "3A-DA-12",
+            "description": "Create computational models that represent the relationships among different elements of data collected from a phenomenon or process."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-08",
+            "description": "Describe how artificial intelligence drives many software and physical systems."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "DA",
+            "categoryDescription": "Data & Analysis",
+            "shortcode": "3B-DA-05",
+            "description": "Use data analysis tools and techniques to identify patterns in data representing complex systems."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/8",
+        "title": "Lesson 8: AAA and AI"
+      },
+      {
+        "key": "Lesson 9: Encryption",
+        "position": 9,
+        "displayName": "Lesson 9: Encryption",
+        "preparation": "- Print copies of the Encryption Design Challenge activity guide (one for each group of students)\n- (Optional) Print copies of the Design Challenge Inspiration Cards\n- (Optional) Print copies of the Caesar Cipher Wheel",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386778,
+              "key": "caesar_cipher_wheel",
+              "name": "Caesar Cipher Wheel",
+              "url": "https://docs.google.com/presentation/d/1yUziVL7c_gzWAO2W7zU8NPbUPiUahkOsfPC9uI_r2Og/edit?usp=drive_link",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Resource"
+            },
+            {
+              "id": 17386785,
+              "key": "design_challenge_inspiration_cards",
+              "name": "Design Challenge Inspiration Cards",
+              "url": "https://docs.google.com/presentation/d/1PcX7_KjwYIW_fklIX5qA35Lt84LVdWWcxMjYbUTv-tg/edit?usp=drive_link",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Resource"
+            },
+            {
+              "id": 17386789,
+              "key": "encryption_design_challenge",
+              "name": "Encryption Design Challenge",
+              "url": "https://docs.google.com/document/d/1fw7Vi2fHVYdqEN299-9Hr9-c5FnLVC8ZQPeWryURJlo/edit?usp=drive_link",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "decryption",
+            "word": "Decryption",
+            "definition": "a process that reverses encryption, taking a secret message and reproducing the original plain text"
+          },
+          {
+            "key": "encryption",
+            "word": "Encryption",
+            "definition": "a process of encoding messages to keep them secret, so only \"authorized\" parties can read it"
+          },
+          {
+            "key": "asymmetric_encryption",
+            "word": "asymmetric encryption",
+            "definition": "encryption that uses two different keys: a public key to lock the message and a private key to unlock it"
+          },
+          {
+            "key": "symmetric_encryption",
+            "word": "symmetric encryption",
+            "definition": "encryption where the same key is used to lock and unlock the message"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779536,
+            "description": "Apply encryption concepts to different data states (at rest, in transit, in use)"
+          },
+          {
+            "id": 8779516,
+            "description": "Describe how encryption helps protect data"
+          },
+          {
+            "id": 8779512,
+            "description": "Differentiate between symmetric and asymmetric encryption"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3A-AP-13",
+            "description": "Create prototypes that use algorithms to solve computational problems by leveraging prior student knowledge and personal interests."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "CS",
+            "categoryDescription": "Computing Systems",
+            "shortcode": "3A-CS-01",
+            "description": "Explain how abstractions hide the underlying implementation details of computing systems embedded in everyday objects."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3B-NI-04",
+            "description": "Compare ways software developers protect devices and information from unauthorized access."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/9",
+        "title": "Lesson 9: Encryption"
+      },
+      {
+        "key": "Lesson 10: AI in Encryption",
+        "position": 10,
+        "displayName": "Lesson 10: AI in Encryption",
+        "preparation": "- Print copies of the AI in Encryption activity guide (one for each student)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386767,
+              "key": "ai_in_encryption_1",
+              "name": "AI in Encryption",
+              "url": "https://docs.google.com/document/d/1K3U7GQBQl2XV8s7ozu93jCbeAtlIDNTCz9yzEuoFbng/edit?tab=t.0",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779524,
+            "description": "Analyze a tradeoff introduced by AI’s role in encryption"
+          },
+          {
+            "id": 8779538,
+            "description": "Identify ways AI can both weaken and strengthen encryption"
+          },
+          {
+            "id": 8779537,
+            "description": "Model how AI and computational power influence the effectiveness of encryption systems"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-07",
+            "description": "Compare various security measures, considering tradeoffs between the usability and security of a computer system."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3B-AP-08",
+            "description": "Describe how artificial intelligence drives many software and physical systems."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "DA",
+            "categoryDescription": "Data & Analysis",
+            "shortcode": "3B-DA-05",
+            "description": "Use data analysis tools and techniques to identify patterns in data representing complex systems."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "IC",
+            "categoryDescription": "Impacts of Computing",
+            "shortcode": "3B-IC-25",
+            "description": "Evaluate computational artifacts to maximize their beneficial effects and minimize harmful effects on society."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/10",
+        "title": "Lesson 10: AI in Encryption"
+      },
+      {
+        "key": "Lesson 11: Security vs Usability",
+        "position": 11,
+        "displayName": "Lesson 11: Security vs Usability",
+        "preparation": "- Print copies of the Redesign Challenge activity guide (one per group)\n- Print copies of the Security vs Usability Matrix handout (one per group)",
+        "resources": {},
+        "vocabularies": [],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779514,
+            "description": "Describe how a security feature might unintentionally create a barrier for users"
+          },
+          {
+            "id": 8779532,
+            "description": "Redesign a security feature to better balance security and usability"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3A-AP-21",
+            "description": "Evaluate and refine computational artifacts to make them more usable and accessible."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "IC",
+            "categoryDescription": "Impacts of Computing",
+            "shortcode": "3A-IC-25",
+            "description": "Test and refine computational artifacts to reduce bias and equity deficits."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-07",
+            "description": "Compare various security measures, considering tradeoffs between the usability and security of a computer system."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/11",
+        "title": "Lesson 11: Security vs Usability"
+      },
+      {
+        "key": "Lesson 12: Layered Defenses",
+        "position": 12,
+        "displayName": "Lesson 12: Layered Defenses",
+        "preparation": "- Provide green, blue, and yellow colored pencils for students to use\n- Print copies of the Layered Defenses Activity Guide (one for each student)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386784,
+              "key": "defense_menu",
+              "name": "Defense Menu",
+              "url": "https://docs.google.com/document/d/1WiwieuaKOaCo_Jf99P0EHFK77Gyrx4ehm8GunDxmelQ/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17386796,
+              "key": "layered_defenses_2",
+              "name": "Layered Defenses",
+              "url": "https://docs.google.com/document/d/1A20Ct1B4DdbddiDFSVDbcec7-aXbX_ZKNVT90Zgv2wc/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "curriculum",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [
+          {
+            "key": "layered_defense",
+            "word": "layered defense",
+            "definition": "using multiple, independent security features to protect systems and data"
+          }
+        ],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779509,
+            "description": "Apply computational thinking to analyze cyberattacks, identify system vulnerabilities, and reason through defense strategies"
+          },
+          {
+            "id": 8779539,
+            "description": "Design a layered defense that balances protection, usability, and constraints"
+          },
+          {
+            "id": 8779531,
+            "description": "Evaluate design choices in system features that balance security and usability, including those enhanced by AI"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-06",
+            "description": "Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-07",
+            "description": "Compare various security measures, considering tradeoffs between the usability and security of a computer system."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-08",
+            "description": "Explain tradeoffs when selecting and implementing cybersecurity recommendations."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3B-NI-04",
+            "description": "Compare ways software developers protect devices and information from unauthorized access."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/12",
+        "title": "Lesson 12: Layered Defenses"
+      },
+      {
+        "key": "Lesson 13: Designing Secure Systems Project",
+        "position": 13,
+        "displayName": "Lesson 13: Designing Secure Systems Project",
+        "preparation": "- Print copies of the AI Powered Threats and Defenses Project Guide (one for each pair of students)",
+        "resources": {
+          "Student": [
+            {
+              "id": 17386784,
+              "key": "defense_menu",
+              "name": "Defense Menu",
+              "url": "https://docs.google.com/document/d/1WiwieuaKOaCo_Jf99P0EHFK77Gyrx4ehm8GunDxmelQ/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Handout"
+            },
+            {
+              "id": 17386787,
+              "key": "designing_secure_systems_project_planning_guide",
+              "name": "Designing Secure Systems Project Planning Guide",
+              "url": "https://docs.google.com/document/d/1VgnmVktQ4_Kq4yWKW9v4xvuvNRTFfL1KIuRcFrSx2GQ/edit?usp=sharing",
+              "downloadUrl": null,
+              "download_url": null,
+              "audience": "Student",
+              "embeddabilityType": "embed_and_resource_dropdown",
+              "curriculumCategory": "",
+              "type": "Activity Guide"
+            }
+          ]
+        },
+        "vocabularies": [],
+        "programmingExpressions": [],
+        "objectives": [
+          {
+            "id": 8779540,
+            "description": "Design secure system improvements that balance protection with usability, using trade-off reasoning"
+          },
+          {
+            "id": 8779527,
+            "description": "Explain how solutions work and how they help real users"
+          },
+          {
+            "id": 8779519,
+            "description": "Identify security and usability issues in a digital system by analyzing user needs and risks"
+          }
+        ],
+        "standards": [
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3A-AP-13",
+            "description": "Create prototypes that use algorithms to solve computational problems by leveraging prior student knowledge and personal interests."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3A-AP-21",
+            "description": "Evaluate and refine computational artifacts to make them more usable and accessible."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "AP",
+            "categoryDescription": "Algorithms & Programming",
+            "shortcode": "3A-AP-23",
+            "description": "Document design decisions using text, graphics, presentations, and/or demonstrations in the development of complex programs."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-06",
+            "description": "Recommend security measures to address various scenarios based on factors such as efficiency, feasibility, and ethical impacts."
+          },
+          {
+            "frameworkName": "CSTA K-12 Computer Science Standards (2017)",
+            "parentCategoryShortcode": null,
+            "parentCategoryDescription": null,
+            "categoryShortcode": "NI",
+            "categoryDescription": "Networks & the Internet",
+            "shortcode": "3A-NI-07",
+            "description": "Compare various security measures, considering tradeoffs between the usability and security of a computer system."
+          }
+        ],
+        "link": "/courses/artificial-intelligence-foundations-2026/units/5/lessons/13",
+        "title": "Lesson 13: Designing Secure Systems Project"
+      }
+    ]
+  }
+}

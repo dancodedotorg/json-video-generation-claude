@@ -1,0 +1,4 @@
+- Decryption: a process that reverses encryption, taking a secret message and reproducing the original plain text
+- Encryption: a process of encoding messages to keep them secret, so only "authorized" parties can read it
+- asymmetric encryption: encryption that uses two different keys: a public key to lock the message and a private key to unlock it
+- symmetric encryption: encryption where the same key is used to lock and unlock the message

@@ -1,0 +1,172 @@
+{
+  "video_name": "lesson-plan-and-script",
+  "unit": "standalone",
+  "lesson": "how-to-make-a-video",
+  "target_objectives": [
+    "Explain the four video modes (concept, summary, re-teach, co-create) and when to use each.",
+    "Describe how the lesson plan skill analyzes objectives and vocabulary to recommend a video plan.",
+    "Explain how the video script skill uses mode-specific reference files to generate a script.",
+    "Identify which files to create or edit to add a new video mode or improve an existing one."
+  ],
+  "supporting_objectives": [
+    "Explain the full video generation pipeline from unit setup through assembly."
+  ],
+  "target_vocabulary": [],
+  "supporting_vocabulary": [],
+  "mode": "co-create",
+  "brief": "Audience: curriculum authors and educators who have already watched the pipeline overview video. Angle: deep-dive into the lesson plan skill and the video script skill - the two skills that determine what kind of video you get and what it sounds like. Cover the four modes in detail, how the re-teach coupling analysis works, how style guides drive script generation, and - using teacher-facing professional learning as an illustrative example - what files someone would need to create or edit to add a brand-new mode or improve an existing one. Tone: direct and tutorial-focused, same register as the pipeline video. Length: as many scenes as needed - these are tutorial videos and are not length-constrained.",
+  "width": 1600,
+  "height": 900,
+  "pipeline": {
+    "grounding": "complete",
+    "script": "complete",
+    "html": "complete",
+    "audio_tags": "complete",
+    "audio": "complete",
+    "assembled": false,
+    "html_mode": "html_templates_only"
+  },
+  "tts": {
+    "provider": "gemini",
+    "mode": "per_scene",
+    "voice": "Kore"
+  },
+  "scenes": [
+    {
+      "comment": "Title slide: 'Lesson Planning and Script Modes' as the main heading. Subtitle: 'How the lesson plan skill and video script skill shape every video you generate'. Clean layout with a subtle branching or decision-tree motif in the background.",
+      "speech": "This video goes deeper into two of skills of the video generation process - the lesson plan skill and the video script skill.",
+      "elevenlabs": "[thoughtful] This video goes deeper into two of skills of the video generation process - the lesson plan skill and the video script skill.",
+      "gemini": "[warmly] This video goes deeper into two of skills of the video generation process - the lesson plan skill and the video script skill.",
+      "duration": "10.22s",
+      "audio": "audio/scene_01.mp3"
+    },
+    {
+      "comment": "Diagram: the same lesson source materials (a box labeled 'objectives + vocabulary + slides') with four arrows branching out to four distinct video outputs, each labeled with a mode name: concept, summary, re-teach, co-create.",
+      "speech": "The lesson plan skill is where you can decide what kinds of pre-formatted videos you want to make, or if you want to design your own. There are currently four modes available: concept, summary, re-teach, and co-create.",
+      "elevenlabs": "[happy] The lesson plan skill is where you can decide what kinds of pre-formatted videos you want to make, or if you want to design your own. There are currently four modes available: concept, summary, re-teach, and co-create.",
+      "gemini": "[clearly] The lesson plan skill is where you can decide what kinds of pre-formatted videos you want to make, or if you want to design your own. There are currently four modes available: concept, summary, re-teach, and co-create.",
+      "duration": "16.10s",
+      "audio": "audio/scene_02.mp3"
+    },
+    {
+      "comment": "Mode card for 'concept': a labeled info box with key attributes - 'One scene per slide', 'Follows lesson order', 'Thorough narration', 'Roughly 15-25 seconds per scene', 'Best for: first-exposure teaching'.",
+      "speech": "Concept mode produces one scene per slide and walks through the lesson in order with full narration, using the slide speaker notes as the basis for each scene. Use this when you want a teacher-led narration through slides. It's usually a good idea to edit or trim the slides beforehand so they focus just on the teachable content in the lesson plan",
+      "elevenlabs": "[thoughtful] Concept mode produces one scene per slide and walks through the lesson in order with full narration, using the slide speaker notes as the basis for each scene. Use this when you want a teacher-led narration through slides. It's usually a good idea to edit or trim the slides beforehand so they focus just on the teachable content in the lesson plan",
+      "gemini": "[deliberately] Concept mode produces one scene per slide and walks through the lesson in order with full narration, using the slide speaker notes as the basis for each scene. Use this when you want a teacher-led narration through slides. It's usually a good idea to edit or trim the slides beforehand so they focus just on the teachable content in the lesson plan",
+      "duration": "23.62s",
+      "audio": "audio/scene_03.mp3"
+    },
+    {
+      "comment": "Mode card for 'summary': a labeled info box - '3 to 8 scenes total', 'Grouped by theme not by slide', 'Key takeaway per scene', 'Roughly 10-20 seconds per scene', 'Best for: review or orientation'.",
+      "speech": "Summary mode compresses the lesson into 3 to 8 scenes. Instead of one scene per slide, it groups slides thematically - multiple slides that share a concept or build a common idea get combined into one scene with a single key takeaway.",
+      "elevenlabs": "[thoughtful] Summary mode compresses the lesson into 3 to 8 scenes. Instead of one scene per slide, it groups slides thematically - multiple slides that share a concept or build a common idea get combined into one scene with a single key takeaway.",
+      "gemini": "[clearly] Summary mode compresses the lesson into 3 to 8 scenes. Instead of one scene per slide, it groups slides thematically - multiple slides that share a concept or build a common idea get combined into one scene with a single key takeaway.",
+      "duration": "18.62s",
+      "audio": "audio/scene_04.mp3"
+    },
+    {
+      "comment": "Mode card for 're-teach': a labeled info box - 'Follows lesson structure', 'More explicit explanations', 'Walks through student activities', 'Typically 8-12 scenes', '2-3 minute target', 'Best for: students who completed the lesson but need reinforcement'.",
+      "speech": "Re-teach mode goes over the lesson for a student who is still confused by the core content. It includes more direct statements, visible reasoning, and actual walk-throughs of what students did in each activity. It does not introduce new analogies or content; it re-contextualizes the lesson and explains what a student may have missed when doing the activities themselves. These videos were initially designed for AI Tutor plus.",
+      "elevenlabs": "[thoughtful] Re-teach mode goes over the lesson for a student who is still confused by the core content. It includes more direct statements, visible reasoning, and actual walk-throughs of what students did in each activity. It does not introduce new analogies or content; it re-contextualizes the lesson and explains what a student may have missed when doing the activities themselves. These videos were initially designed for AI Tutor plus.",
+      "gemini": "[seriously] Re-teach mode goes over the lesson for a student who is still confused by the core content. It includes more direct statements, visible reasoning, and actual walk-throughs of what students did in each activity. It does not introduce new analogies or content; it re-contextualizes the lesson and explains what a student may have missed when doing the activities themselves. These videos were initially designed for AI Tutor plus.",
+      "duration": "28.90s",
+      "audio": "audio/scene_05.mp3"
+    },
+    {
+      "comment": "Mode card for 'co-create': a form-style layout with four labeled fields - 'Audience: who is watching and what they know', 'Angle/Focus: what aspect to center on', 'Tone: override the default register if needed', 'Length: approximate scenes or minutes'. A 'brief' label connects these fields to the script.json brief field.",
+      "speech": "Co-create mode is the most flexible. Instead of a fixed structure, you provide a brief: who the audience is, what angle or focus you want, what tone to use, and roughly how long. The script is built around your brief rather than a preset template. This is the mode to reach for when none of the other three fit - a parent explainer, a vocabulary-only video, a teacher prep video, anything that has its own purpose and framing.",
+      "elevenlabs": "[excited] Co-create mode is the most flexible. Instead of a fixed structure, you provide a brief: who the audience is, what angle or focus you want, what tone to use, and roughly how long. The script is built around your brief rather than a preset template. This is the mode to reach for when none of the other three fit - a parent explainer, a vocabulary-only video, a teacher prep video, anything that has its own purpose and framing.",
+      "gemini": "[excitedly] Co-create mode is the most flexible. Instead of a fixed structure, you provide a brief: who the audience is, what angle or focus you want, what tone to use, and roughly how long. The script is built around your brief rather than a preset template. This is the mode to reach for when none of the other three fit - a parent explainer, a vocabulary-only video, a teacher prep video, anything that has its own purpose and framing.",
+      "duration": "31.14s",
+      "audio": "audio/scene_06.mp3"
+    },
+    {
+      "comment": "A numbered step list of the lesson plan skill's process: (1) Check grounding, (2) Ask what video types you want, (3) Read source materials, (4) Run coupling analysis if re-teach or multi-video, (5) Present plans and ask you to choose, (6) Confirm video names, (7) Write lesson-plan.json, (8) Init video folders.",
+      "speech": "Here are the full steps of the skill. First it checks that grounding is complete, then asks what types of videos you want. If you request re-teach or are splitting content across multiple videos, it runs a coupling analysis and presents several plan options for you to choose from. After you pick a plan and confirm the video names, it writes lesson-plan.json and initializes all the video folders.",
+      "elevenlabs": "[thoughtful] Here are the full steps of the skill. First it checks that grounding is complete, then asks what types of videos you want. If you request re-teach or are splitting content across multiple videos, it runs a coupling analysis and presents several plan options for you to choose from. After you pick a plan and confirm the video names, it writes lesson-plan.json and initializes all the video folders.",
+      "gemini": "[deliberately] Here are the full steps of the skill. First it checks that grounding is complete, then asks what types of videos you want. If you request re-teach or are splitting content across multiple videos, it runs a coupling analysis and presents several plan options for you to choose from. After you pick a plan and confirm the video names, it writes lesson-plan.json and initializes all the video folders.",
+      "duration": "28.66s",
+      "audio": "audio/scene_07.mp3"
+    },
+    {
+      "comment": "A diagram showing lesson objectives as labeled nodes. Some nodes have double-headed arrows between them labeled 'tightly coupled'. Others stand alone. The result is a grouping where coupled objectives stay together in the same video.",
+      "speech": "If you choose re-teach videos, there's an extra step to make a recommendation for how many videos to make based on the objectives. The skill looks at all the objectives and asks: which ones are so closely related? Which ones can stand independently? Objectives that share the same slide section, the same activity, or a clear prerequisite relationship are flagged as tightly coupled and should stay together.",
+      "elevenlabs": "[thoughtful] If you choose re-teach videos, there's an extra step to make a recommendation for how many videos to make based on the objectives. The skill looks at all the objectives and asks: which ones are so closely related? Which ones can stand independently? Objectives that share the same slide section, the same activity, or a clear prerequisite relationship are flagged as tightly coupled and should stay together.",
+      "gemini": "[curious] If you choose re-teach videos, there's an extra step to make a recommendation for how many videos to make based on the objectives. The skill looks at all the objectives and asks: which ones are so closely related? Which ones can stand independently? Objectives that share the same slide section, the same activity, or a clear prerequisite relationship are flagged as tightly coupled and should stay together.",
+      "duration": "27.26s",
+      "audio": "audio/scene_08.mp3"
+    },
+    {
+      "comment": "Three plan tables side by side: Plan A (fully split - one video per objective), Plan B (fully combined - one video for everything with a warning 'Est. 5-6 min - exceeds 3-minute limit'), Plan C (intermediate - two videos, balanced). An arrow points to Plan C with the label 'Recommended'.",
+      "speech": "The skill generates at least two plans - Plan A fully split with one video per objective, and Plan B fully combined in one video. It also generates intermediate plans for each meaningful grouping the coupling analysis suggests. The skill then applies ranking criteria to the remaining plans and tells you which one it recommends and why.",
+      "elevenlabs": "[happy] The skill generates at least two plans - Plan A fully split with one video per objective, and Plan B fully combined in one video. It also generates intermediate plans for each meaningful grouping the coupling analysis suggests. The skill then applies ranking criteria to the remaining plans and tells you which one it recommends and why.",
+      "gemini": "[clearly] The skill generates at least two plans - Plan A fully split with one video per objective, and Plan B fully combined in one video. It also generates intermediate plans for each meaningful grouping the coupling analysis suggests. The skill then applies ranking criteria to the remaining plans and tells you which one it recommends and why.",
+      "duration": "26.82s",
+      "audio": "audio/scene_09.mp3"
+    },
+    {
+      "comment": "A two-column table showing 'target objectives' vs 'supporting objectives' for two sibling videos. Video-1 has Objective A in target and Objective B in supporting. Video-2 has Objective B in target and Objective A in supporting. Callout: 'Each objective is taught in exactly one video, but may appear as support in any number of siblings.'",
+      "speech": "Once you choose a plan, each video gets two lists of objectives. Target objectives are what the video primarily teaches - the full teaching arc is built around these. Supporting objectives are prerequisites that the video references or recaps briefly so it stands alone for a viewer who has not seen the sibling videos.",
+      "elevenlabs": "[thoughtful] Once you choose a plan, each video gets two lists of objectives. Target objectives are what the video primarily teaches - the full teaching arc is built around these. Supporting objectives are prerequisites that the video references or recaps briefly so it stands alone for a viewer who has not seen the sibling videos.",
+      "gemini": "[deliberately] Once you choose a plan, each video gets two lists of objectives. Target objectives are what the video primarily teaches - the full teaching arc is built around these. Supporting objectives are prerequisites that the video references or recaps briefly so it stands alone for a viewer who has not seen the sibling videos.",
+      "duration": "22.98s",
+      "audio": "audio/scene_10.mp3"
+    },
+    {
+      "comment": "A code snippet showing a lesson-plan.json entry with 'name', 'mode', 'target_objectives', 'supporting_objectives', 'target_vocabulary', 'supporting_vocabulary', and 'brief' fields. Below it, a terminal output from init_videos.py confirming folder creation.",
+      "speech": "The output is lesson-plan json file plus initialized video folders. Each entry in the JSON file has the video name, the mode, and both objective lists. Then the video folders are created and each one gets an initial script json file with the objectives and mode already filled in. At this point, you've basically taken a single lesson and said 'here are all the videos I want to generate related to this lesson'.",
+      "elevenlabs": "[happy] The output is lesson-plan json file plus initialized video folders. Each entry in the JSON file has the video name, the mode, and both objective lists. Then the video folders are created and each one gets an initial script json file with the objectives and mode already filled in. At this point, you've basically taken a single lesson and said 'here are all the videos I want to generate related to this lesson'.",
+      "gemini": "[excitedly] The output is lesson-plan json file plus initialized video folders. Each entry in the JSON file has the video name, the mode, and both objective lists. Then the video folders are created and each one gets an initial script json file with the objectives and mode already filled in. At this point, you've basically taken a single lesson and said 'here are all the videos I want to generate related to this lesson'.",
+      "duration": "29.86s",
+      "audio": "audio/scene_11.mp3"
+    },
+    {
+      "comment": "A transition diagram: lesson-plan.json on the left with an arrow labeled 'video script skill' pointing to a script.json on the right. Inside script.json, the 'mode' field is highlighted. A second arrow from 'mode' points to a file in .claude/skills/video-script/references/ labeled 'reteach-style-guide.md'.",
+      "speech": "Next, you would run the video script skill on one of these videos. This skill reads the mode that was stored during planning. The mode is the key that determines which style guide the skill reads before it generates a single scene.",
+      "elevenlabs": "[thoughtful] Next, you would run the video script skill on one of these videos. This skill reads the mode that was stored during planning. The mode is the key that determines which style guide the skill reads before it generates a single scene.",
+      "gemini": "[deliberately] Next, you would run the video script skill on one of these videos. This skill reads the mode that was stored during planning. The mode is the key that determines which style guide the skill reads before it generates a single scene.",
+      "duration": "17.38s",
+      "audio": "audio/scene_12.mp3"
+    },
+    {
+      "comment": "A file tree of .claude/skills/video-script/references/ showing four files: concept-style-guide.md, summary-style-guide.md, reteach-style-guide.md, co-create-style-guide.md, and mode-guide.md. Each file has a one-line description next to it.",
+      "speech": "Inside the video script skill, there is a references folder with one style guide per mode. These files are the primary instructions the skill follows when writing your script.",
+      "elevenlabs": "[thoughtful] Inside the video script skill, there is a references folder with one style guide per mode. These files are the primary instructions the skill follows when writing your script.",
+      "gemini": "[clearly] Inside the video script skill, there is a references folder with one style guide per mode. These files are the primary instructions the skill follows when writing your script.",
+      "duration": "12.34s",
+      "audio": "audio/scene_13.mp3"
+    },
+    {
+      "comment": "A simple two-column layout: LEFT - 'The system is open' with an icon of an unlocked padlock. RIGHT - 'Modes are files' with an icon of a Markdown file. A callout: 'No code changes required to add a new mode - only Markdown files.'",
+      "speech": "This brings us to the most important thing to understand about extending this system: modes are just files. There is no code that hardwires the four modes. The entire behavior of a mode - its structure, its tone, its scene count targets - lives in its style guide. Adding a new mode means creating a new Markdown file and updating a few existing ones.",
+      "elevenlabs": "[excited] This brings us to the most important thing to understand about extending this system: modes are just files. There is no code that hardwires the four modes. The entire behavior of a mode - its structure, its tone, its scene count targets - lives in its style guide. Adding a new mode means creating a new Markdown file and updating a few existing ones.",
+      "gemini": "[excitedly] This brings us to the most important thing to understand about extending this system: modes are just files. There is no code that hardwires the four modes. The entire behavior of a mode - its structure, its tone, its scene count targets - lives in its style guide. Adding a new mode means creating a new Markdown file and updating a few existing ones.",
+      "duration": "26.82s",
+      "audio": "audio/scene_14.mp3"
+    },
+    {
+      "comment": "A file diagram showing a new teacher-facing professional learning mode being added. The new file, proflearning-style-guide.md, is highlighted. Arrows point from this file to other files: mode-guide.md, video-script's SKILL.md, and lesson-plan's SKILL.md. The arrows are attributed to Claude making updates.",
+      "speech": "Say you wanted to add a teacher-facing professional learning video mode. The core step is is adding a new style guide to the video script references, which Claude can help you create. Then you can ask Claude to update the lesson-plan and video-script skills with this new mode.",
+      "elevenlabs": "[happy] Say you wanted to add a teacher-facing professional learning video mode. The core step is is adding a new style guide to the video script references, which Claude can help you create. Then you can ask Claude to update the lesson-plan and video-script skills with this new mode.",
+      "gemini": "[thoughtfully] Say you wanted to add a teacher-facing professional learning video mode. The core step is is adding a new style guide to the video script references, which Claude can help you create. Then you can ask Claude to update the lesson-plan and video-script skills with this new mode.",
+      "duration": "18.46s",
+      "audio": "audio/scene_15.mp3"
+    },
+    {
+      "comment": "An annotated view of reteach-style-guide.md with callout arrows pointing to editable sections: 'Change scene count target here', 'Add a new content rule here', 'Adjust the tone guidance here'. Below: a note that changes take effect the next time you run the video script skill.",
+      "speech": "Improving an existing mode works the same way - you just edit the style guide file directly. If you want re-teach videos to always end with a vocabulary recap scene, add that as a structure rule. If you want concept mode to be more concise, lower the scene length target. The change takes effect immediately the next time you run the video script skill.",
+      "elevenlabs": "[happy] Improving an existing mode works the same way - you just edit the style guide file directly. If you want re-teach videos to always end with a vocabulary recap scene, add that as a structure rule. If you want concept mode to be more concise, lower the scene length target. The change takes effect immediately the next time you run the video script skill.",
+      "gemini": "[excitedly] Improving an existing mode works the same way - you just edit the style guide file directly. If you want re-teach videos to always end with a vocabulary recap scene, add that as a structure rule. If you want concept mode to be more concise, lower the scene length target. The change takes effect immediately the next time you run the video script skill.",
+      "duration": "23.74s",
+      "audio": "audio/scene_16.mp3"
+    },
+    {
+      "comment": "Summary slide: two columns side by side. LEFT - 'lesson plan skill': reads objectives + vocabulary, runs coupling analysis for re-teach, generates Plans A/B/C/D, recommends one, writes lesson-plan.json + initializes folders. RIGHT - 'video script skill': reads mode from script.json, reads the mode's style guide from references/, generates scenes following that guide. Below both columns: 'To extend - add a style guide, update mode-guide.md, update both SKILL.md files.'",
+      "speech": "To recap: the lesson plan skill coordinates the videos you want to make for that lesson and creates folders for each video. Re-teach videos have extra steps to align to objectives and vocabulary in the lesson. The video script skill picks up from there, reads the mode's style guide, and generates a script following those rules. And because modes are just files, adding a new mode or improving an existing one is a Markdown editing task.",
+      "elevenlabs": "[thoughtful] To recap: the lesson plan skill coordinates the videos you want to make for that lesson and creates folders for each video. Re-teach videos have extra steps to align to objectives and vocabulary in the lesson. The video script skill picks up from there, reads the mode's style guide, and generates a script following those rules. And because modes are just files, adding a new mode or improving an existing one is a Markdown editing task.",
+      "gemini": "[warmly] To recap: the lesson plan skill coordinates the videos you want to make for that lesson and creates folders for each video. Re-teach videos have extra steps to align to objectives and vocabulary in the lesson. The video script skill picks up from there, reads the mode's style guide, and generates a script following those rules. And because modes are just files, adding a new mode or improving an existing one is a Markdown editing task.",
+      "duration": "30.10s",
+      "audio": "audio/scene_17.mp3"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "video_name": "encryption-types-and-data-states",
+  "unit": "aif5-v3",
+  "lesson": "lesson-9-encryption",
+  "target_objectives": [
+    "Differentiate between symmetric and asymmetric encryption",
+    "Apply encryption concepts to different data states (at rest, in transit, in use)"
+  ],
+  "supporting_objectives": [
+    "Describe how encryption helps protect data"
+  ],
+  "target_vocabulary": [
+    "symmetric encryption",
+    "asymmetric encryption"
+  ],
+  "supporting_vocabulary": [
+    "Encryption",
+    "Decryption"
+  ],
+  "mode": "re-teach",
+  "brief": null,
+  "width": 1600,
+  "height": 900,
+  "pipeline": {
+    "grounding": "complete",
+    "script": "complete",
+    "html": "pending",
+    "audio_tags": "pending",
+    "audio": "pending",
+    "assembled": false
+  },
+  "tts": {},
+  "scenes": [
+    {
+      "comment": "Title slide: 'Let's Revisit: Encryption Types and Data States' with a subtle lock and key icon",
+      "speech": "This video revisits two ideas from the lesson: the difference between symmetric and asymmetric encryption, and how those types are applied to protect data in different states."
+    },
+    {
+      "comment": "Simple side-by-side diagram showing plaintext going through encryption to scrambled data, then a key reversing it back to plaintext",
+      "speech": "Quick recap. Encryption scrambles data so only someone with the right key can read it. Decryption reverses that process. And encryption must always be reversible - if there is no way to unlock it, it is not encryption, it is just data destruction."
+    },
+    {
+      "comment": "Activity-style visual showing two students with a shared rule or key between them, evoking the Encryption Design Challenge",
+      "speech": "In the Encryption Design Challenge, you invented your own method. Most methods you created used one rule or key that both people had to know. That is exactly the idea behind symmetric encryption."
+    },
+    {
+      "comment": "Diagram showing one key used to both lock and unlock a message, with the label 'Symmetric Encryption: same key to lock and unlock'",
+      "speech": "Symmetric encryption is when the same key is used to both lock and unlock a message. It is fast and efficient - great for protecting large amounts of data. The catch: both sides have to share the same secret key beforehand."
+    },
+    {
+      "comment": "Diagram showing two keys: a public key shared broadly and a private key kept secret, with a mailbox visual illustrating the concept",
+      "speech": "Asymmetric encryption uses two different keys. A public key that anyone can use to lock a message for you. And a private key only you have to unlock it. Think of a mailbox - anyone can drop mail in, but only you have the key to open it."
+    },
+    {
+      "comment": "Visual of two people who have never met communicating securely over the internet, with a public key visible and a private key hidden",
+      "speech": "This makes asymmetric encryption essential for the internet. You cannot always share a secret key with someone you have never met. Asymmetric encryption solves that: your public key is out there, so anyone can send you something secure - but only your private key can unlock it."
+    },
+    {
+      "comment": "Three-stage timeline showing a message moving from stored on a device, to traveling across a network, to being opened and read",
+      "speech": "Now let's connect this to data states. Data does not stay in one place - it gets stored, sent, and opened. Protecting it means using the right type of encryption for each state: at rest, in transit, and in use."
+    },
+    {
+      "comment": "Visual of a hard drive or cloud storage icon with a symmetric key lock, labeled 'Data at Rest'",
+      "speech": "Data at rest is information stored on a device - a phone, hard drive, or the cloud. Symmetric encryption is used here because it is fast and handles large amounts of data efficiently."
+    },
+    {
+      "comment": "Visual of data packets moving across a network with asymmetric encryption establishing a connection, then symmetric encryption protecting the data flow, labeled 'Data in Transit'",
+      "speech": "Data in transit is data moving across a network - like a message being sent. Asymmetric encryption establishes the secure connection first. Then symmetric encryption takes over to protect the data itself. Both types work together here."
+    },
+    {
+      "comment": "Visual of an open document on a screen showing it is decrypted while in use, with a note that encryption resumes when saved or sent, labeled 'Data in Use'",
+      "speech": "Data in use is data being actively read or edited - like an open document. It is usually decrypted so apps can work with it. When it is saved or sent, encryption kicks back in. This is why securing the device itself matters so much - the data is exposed while it is in use."
+    },
+    {
+      "comment": "Question of the Day slide displaying the question prominently: 'What makes encryption a powerful way to protect data?'",
+      "speech": "Question of the Day: What makes encryption a powerful way to protect data? Think about how symmetric and asymmetric encryption each have strengths - and how applying the right type at the right data state is what makes a real system secure."
+    }
+  ]
+}
