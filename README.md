@@ -2,6 +2,10 @@
 
 A Claude Code-powered pipeline for authoring structured JSON video scripts from curriculum source materials. Each output is a single `.json` file describing a sequence of scenes — each scene is a self-contained HTML document, a narration caption, an optional audio track, and timing metadata.
 
+
+https://github.com/user-attachments/assets/14b3238d-160c-4c91-8492-e473e416ef2e
+
+
 ---
 
 ## How It Works
