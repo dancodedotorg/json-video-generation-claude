@@ -6,6 +6,8 @@ A Claude Code-powered pipeline for authoring structured JSON video scripts from 
 https://github.com/user-attachments/assets/14b3238d-160c-4c91-8492-e473e416ef2e
 
 
+The files that made this video, along with a few video examples from the curriculum, is in this repo for you to explore. You can find them in the generation/units folder. They can help contextualize this process since they are real examples of videos generated this way.
+
 ---
 
 ## How It Works
